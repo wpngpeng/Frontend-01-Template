@@ -11,16 +11,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="./reset.css" />
     <style>
+      @media screen and (orientation: portrait) {
+        html {
+          width: 100vmin;
+          height: 100vmax;
+        }
+        body {
+          width: 100vmin;
+          height: 100vmax;
+          transform-origin: top left;
+          transform: rotate(90deg) translate(0, -100vmin);
+        }
+      }
       #wrapper {
         display: flex;
         list-style: none;
-        height: 30vh;
+        height: 50vw;
+        width: 100vh;
+        background: aqua;
         min-height: 150px;
         margin: 0 auto;
         position: relative;
+        border-bottom: 1px solid #eee;
       }
       #wrapper > li {
-        width: 30px;
+        width: 5vw;
         border: 1px solid #000000;
         margin-left: 20px;
         font-family: 'Microsoft YaHei UI';
@@ -47,12 +62,15 @@
     </style>
   </head>
   <body>
-    <h1 style="color: magenta;">
-      quick sort<button id="button">开始</button
-      ><button id="buttonToggleAction">未开始</button
-      ><button id="buttonReset">重置</button>
-      <button id="buttonRandom">随机数</button>
+    <h1 style="color: magenta;text-align: center; width: 100vh;">
+      quick sort
     </h1>
+    <p style="display: flex; justify-content: center;align-items: center; width: 100vh;padding: 5vw 0;">
+      <button id="button">开始</button>
+      <button id="buttonToggleAction">未开始</button>
+      <button id="buttonReset">重置</button>
+      <button id="buttonRandom">随机数</button>
+    </p>
     <ul id="wrapper"></ul>
     <script>
       function createRandArr(limit = 20) {
@@ -178,7 +196,7 @@
         arr.forEach((item, index) => {
           const li = document.createElement('li')
           const span = document.createElement('span')
-          li.style.cssText = `height:${item}px;left:${index * 50}px`
+          li.style.cssText = `height:${item}px;left:${index * 8}vw`
           li.setAttribute('key', index)
           span.innerText = item
           li.appendChild(span)
@@ -237,7 +255,7 @@
             toggle.style.color = 'green'
           })
         }
-        function resetConfig (){
+        function resetConfig() {
           clearTimeout(timer)
           timer = null
           initSortItem(arr)
