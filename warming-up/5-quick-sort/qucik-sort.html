@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="renderer" content="webkit" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <style>
+      #wrapper {
+        display: flex;
+        list-style: none;
+        height: 50vh;
+        min-height: 150px;
+        margin: 0 auto;
+        position: relative;
+      }
+      #wrapper > li {
+        width: 30px;
+        border: 1px solid #000000;
+        margin-left: 20px;
+        font-family: 'Microsoft YaHei UI';
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        transform: translate3d(0, 0, 0);
+        left: 0;
+        bottom: 0;
+        transition: all 0.3s linear;
+        box-sizing: border-box;
+        position: absolute;
+      }
+      #wrapper > li > span {
+        position: relative;
+        top: -20px;
+      }
+      button{
+        width: 100px;
+        height: 45px;
+        cursor: pointer;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: magenta">quick sort<button id="button">开始</button><button id="buttonToggleAction">未开始</button><button id="buttonReset">重置</button></h1>
+    <ul id="wrapper"></ul>
+    <script>
+      function createRandArr(limit = 20) {
+        return new Array(20).fill(1).map((item) => ~~(1 + Math.random() * 100))
+      }
+      const arrTmp = [
+        51,
+        75,
+        59,
+        43,
+        17,
+        3,
+        84,
+        100,
+        26,
+        30,
+        12,
+        45,
+        58,
+        99,
+        54,
+        26,
+        7,
+        60,
+        69,
+        94
+      ]
+      let arr = [...arrTmp]
+      let timer = null
+      let stop = undefined
+      let stopArr = []
+      let step = []
+      initSortItem(arr)
+      action()
+      reset()
+      // 基本排序
+      // function quickSortBase(arr) {
+      //   const len = arr.length
+      //   if (len < 2) {
+      //     return arr
+      //   } else {
+      //     const flag = arr[0]
+      //     const left = []
+      //     const right = []
+      //     for (let i = 1, tmp; i < len; i++) {
+      //       tmp = arr[i]
+      //       if (tmp < flag) {
+      //         left.push(tmp)
+      //       } else {
+      //         right.push(tmp)
+      //       }
+      //     }
+      //     return quickSortBase(left).concat(flag, quickSortBase(right))
+      //   }
+      // }
+      // 快速排序in-place
+      function quickSort(array) {
+        function swap(arr, i, j) {
+          if (i === j) return
+          const tmp = arr[i]
+          arr[i] = arr[j]
+          arr[j] = tmp
+          step.push(i, j)
+        }
+        function findCenter(arr, left, right) {
+          const flag = arr[left]
+          let idx = left + 1
+          for (let i = idx; i <= right; i++) {
+            if (arr[i] < flag) {
+              swap(arr, i, idx)
+              idx++
+            }
+          }
+          swap(arr, left, idx - 1)
+          return idx
+        }
+        function sort(arr, left, right) {
+          if (left < right) {
+            const center = findCenter(arr, left, right)
+            sort(arr, left, center - 1)
+            sort(arr, center, right)
+          }
+        }
+        sort(array, 0, array.length - 1)
+        return array
+      }
+      // 快速排序in-place 方法二
+      // function stepPush(arr, l, h) {
+      //   arr.push(l, h)
+      // }
+      // function partition(arr, low, high) {
+      //   const pivot = arr[low]
+      //   while (low < high) {
+      //     while (low < high && arr[high] > pivot) {
+      //       high--
+      //     }
+      //     arr[low] = arr[high]
+      //     stepPush(step, low, high)
+      //     while (low < high && arr[low] <= pivot) {
+      //       low++
+      //     }
+      //     arr[high] = arr[low]
+      //     stepPush(step, low, high)
+      //   }
+      //   arr[low] = pivot
+      //   return low
+      // }
+      //
+      // function quickSort2(arr, low = 0, high = arr.length-1) {
+      //   if (low < high) {
+      //     const pivot = partition(arr, low, high)
+      //     quickSort2(arr, low, pivot - 1)
+      //     quickSort2(arr, pivot + 1, high)
+      //   }
+      //   return arr
+      // }
+      /*初始化视图*/
+      function initSortItem(arr) {
+        const fragment = document.createDocumentFragment()
+        const wrapper = document.getElementById('wrapper')
+        wrapper.innerHTML = ''
+        // wrapper.removeChild(wrapper.children)
+        arr.forEach((item, index) => {
+          const li = document.createElement('li')
+          const span = document.createElement('span')
+          li.style.cssText = `height:${item}px;left:${(index)*50}px`
+          li.setAttribute('key', index)
+          span.innerText = item
+          li.appendChild(span)
+          fragment.appendChild(li)
+        })
+        wrapper.appendChild(fragment)
+      }
+      /*交换动画*/
+      function swap(arr, s) {
+        return new Promise(resolve => {
+          const list = document.querySelectorAll('li')
+          timer = setTimeout(() => {
+            let low = {}
+            let high = {}
+            for (let i=0;i<list.length;i++) {
+              if (list[i].getAttribute('key') === '' + s[0]) {
+                low = list[i]
+              }
+              if (list[i].getAttribute('key') === '' + s[1]) {
+                high = list[i]
+              }
+            }
+            const lowLeft = low.style.left
+            const highLeft = high.style.left
+            let tmp = lowLeft
+            low.style.left = highLeft
+            high.style.left = tmp
+            low.setAttribute('key', s[1])
+            high.setAttribute('key', s[0])
+            resolve()
+          }, 500)
+        })
+      }
+      async function run(cb) {
+        while (step.length) {
+          if (stop) {
+            await swap(arr, stopArr)
+            continue
+          }
+          let s = step.splice(0,2)
+          stopArr = s
+          await swap(arr, s)
+
+        }
+        console.log('over')
+        typeof cb === 'function' && cb()
+      }
+      // 按钮
+      function action () {
+        const start = document.getElementById('button')
+        const toggle = document.getElementById('buttonToggleAction')
+        const reset = document.getElementById('buttonReset')
+        function running () {
+          run(() => {
+            toggle.innerText = '已完成!'
+            toggle.style.color = 'green'
+          })
+        }
+        start.addEventListener('click', () => {
+          quickSort(arr)
+          running()
+          toggle.innerText = '进行中...'
+          toggle.style.color = 'blue'
+        })
+        reset.addEventListener('click', () => {
+          clearTimeout(timer)
+          timer = null
+          arr = [...arrTmp]
+          initSortItem(arr)
+          toggle.innerText = '未开始'
+          toggle.style.color = ''
+          stop = undefined
+          stopArr = []
+          step = []
+        })
+        toggle.addEventListener('click', () => {
+          if (toggle.innerText === '未开始' || toggle.innerText ==='已完成!') return
+          if (!stop) {
+            clearTimeout(timer)
+            timer = null
+            toggle.innerText = '暂停中...'
+            toggle.style.color = 'red'
+          } else {
+            running()
+            toggle.innerText = '进行中...'
+            toggle.style.color = 'blue'
+          }
+          stop = !stop
+        })
+      }
+      // reset
+      function reset() {
+      }
+    </script>
+  </body>
+</html>
