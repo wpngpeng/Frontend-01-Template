@@ -14,7 +14,7 @@
       #wrapper {
         display: flex;
         list-style: none;
-        height: 50vh;
+        height: 30vh;
         min-height: 150px;
         margin: 0 auto;
         position: relative;
@@ -38,7 +38,7 @@
         position: relative;
         top: -20px;
       }
-      button{
+      button {
         width: 100px;
         height: 45px;
         cursor: pointer;
@@ -47,7 +47,12 @@
     </style>
   </head>
   <body>
-    <h1 style="color: magenta">quick sort<button id="button">开始</button><button id="buttonToggleAction">未开始</button><button id="buttonReset">重置</button></h1>
+    <h1 style="color: magenta;">
+      quick sort<button id="button">开始</button
+      ><button id="buttonToggleAction">未开始</button
+      ><button id="buttonReset">重置</button>
+      <button id="buttonRandom">随机数</button>
+    </h1>
     <ul id="wrapper"></ul>
     <script>
       function createRandArr(limit = 20) {
@@ -173,7 +178,7 @@
         arr.forEach((item, index) => {
           const li = document.createElement('li')
           const span = document.createElement('span')
-          li.style.cssText = `height:${item}px;left:${(index)*50}px`
+          li.style.cssText = `height:${item}px;left:${index * 50}px`
           li.setAttribute('key', index)
           span.innerText = item
           li.appendChild(span)
@@ -183,12 +188,12 @@
       }
       /*交换动画*/
       function swap(arr, s) {
-        return new Promise(resolve => {
+        return new Promise((resolve) => {
           const list = document.querySelectorAll('li')
           timer = setTimeout(() => {
             let low = {}
             let high = {}
-            for (let i=0;i<list.length;i++) {
+            for (let i = 0; i < list.length; i++) {
               if (list[i].getAttribute('key') === '' + s[0]) {
                 low = list[i]
               }
@@ -213,25 +218,39 @@
             await swap(arr, stopArr)
             continue
           }
-          let s = step.splice(0,2)
+          let s = step.splice(0, 2)
           stopArr = s
           await swap(arr, s)
-
         }
         console.log('over')
         typeof cb === 'function' && cb()
       }
       // 按钮
-      function action () {
+      function action() {
         const start = document.getElementById('button')
         const toggle = document.getElementById('buttonToggleAction')
         const reset = document.getElementById('buttonReset')
-        function running () {
+        const random = document.getElementById('buttonRandom')
+        function running() {
           run(() => {
             toggle.innerText = '已完成!'
             toggle.style.color = 'green'
           })
         }
+        function resetConfig (){
+          clearTimeout(timer)
+          timer = null
+          initSortItem(arr)
+          toggle.innerText = '未开始'
+          toggle.style.color = ''
+          stop = undefined
+          stopArr = []
+          step = []
+        }
+        random.addEventListener('click', () => {
+          arr = createRandArr()
+          resetConfig()
+        })
         start.addEventListener('click', () => {
           quickSort(arr)
           running()
@@ -239,18 +258,12 @@
           toggle.style.color = 'blue'
         })
         reset.addEventListener('click', () => {
-          clearTimeout(timer)
-          timer = null
           arr = [...arrTmp]
-          initSortItem(arr)
-          toggle.innerText = '未开始'
-          toggle.style.color = ''
-          stop = undefined
-          stopArr = []
-          step = []
+          resetConfig()
         })
         toggle.addEventListener('click', () => {
-          if (toggle.innerText === '未开始' || toggle.innerText ==='已完成!') return
+          if (toggle.innerText === '未开始' || toggle.innerText === '已完成!')
+            return
           if (!stop) {
             clearTimeout(timer)
             timer = null
@@ -265,8 +278,7 @@
         })
       }
       // reset
-      function reset() {
-      }
+      function reset() {}
     </script>
   </body>
 </html>
