@@ -22,13 +22,13 @@
   <body>
     <h1>导航</h1>
     <ul>
-      <li url="./warming-up/5-quick-sort/qucik-sort.html">5.快速排序</li>
+      <li url="warming-up/5-quick-sort/qucik-sort.html">5.快速排序</li>
     </ul>
     <script>
       const ul = document.querySelector('ul')
       ul.addEventListener('click', e => {
         console.log(e.target.getAttribute('url'))
-        window.location.href = e.target.getAttribute('url')
+        window.location.href += e.target.getAttribute('url')
         console.log(e.currentTarget)
       })
     </script>
