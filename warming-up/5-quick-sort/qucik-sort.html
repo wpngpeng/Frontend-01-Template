@@ -11,7 +11,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./reset.css" />
     <style>
-      @media screen and (orientation: portrait) {
+      @media screen and (orientation: portrait) and (max-width: 960px){
         html {
           width: 100vmin;
           height: 100vmax;
@@ -23,7 +23,19 @@
           transform: rotate(90deg) translate(0, -100vmin);
         }
       }
-      @media screen and (orientation: landscape) {
+      @media screen and (orientation: landscape) and (max-width: 960px){
+        html{
+          width : 100vmax;
+          height : 100vmin;
+        }
+        body{
+          width : 100vmax;
+          height : 100vmin;
+          transform-origin: top left;
+          transform: rotate(0deg) scale(0.5);
+        }
+      }
+      @media screen and (min-width: 960px){
         html{
           width : 100vmax;
           height : 100vmin;
