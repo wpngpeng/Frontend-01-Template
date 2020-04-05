@@ -11,7 +11,7 @@
 > [display:](https://developer.mozilla.org/zh-CN/docs/Web/CSS/display) inline | block | flex | table | grid ...   
 
 ##### 3.JavaScript 启动后，内存中有多少个对象？如何用代码来获得这些信息？
-> 1个对象,global?
+> 1个对象,global? Object.keys(window)
 
 ##### 4.HTML 的中，如何写一个值为 “a”=‘b’ 的属性值？
 ```js
