@@ -5,6 +5,9 @@
 ##### 1.编写一个 DOM 编辑器：可以自由地操作一个 iframe（空白）中的 DOM 结构，包括增、删、移动。
 
 ##### 2.讲讲 position float display 各有哪些取值，它们互相之间会如何影响？
+> [position:](https://developer.mozilla.org/zh-CN/docs/Web/CSS/position) static | relative | absolute | fixed | sticky
+[float:](https://developer.mozilla.org/zh-CN/docs/CSS/float) none | left | right
+[display:](https://developer.mozilla.org/zh-CN/docs/Web/CSS/display) inline | block | flex | table | grid ... 
 
 ##### 3.JavaScript 启动后，内存中有多少个对象？如何用代码来获得这些信息？
 
