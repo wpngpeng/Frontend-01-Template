@@ -21,3 +21,5 @@ div.setAttribute('data', `"a"='b'`)
 ##### 5.编写一个快速排序代码，并且用动画演示它的过程
 
 >  [快速排序动画](https://jtr354.github.io/Frontend-01-Template/warming-up/5-quick-sort/qucik-sort.html)
+
+## [开营记录](https://github.com/JTR354/Frontend-01-Template/blob/master/warming-up/NOTE.md)
