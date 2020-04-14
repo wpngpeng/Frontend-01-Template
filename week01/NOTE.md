@@ -24,4 +24,4 @@ div.setAttribute('data', `"a"='b'`)
 
 ## [开营记录](https://github.com/JTR354/Frontend-01-Template/blob/master/warming-up/NOTE.md)
 
-## [前端知识体系脑图](http://naotu.baidu.com/file/4b117c428d0bf5e6ab83f89ae83f81f1)
+## [前端知识体系脑图](http://naotu.baidu.com/file/4b117c428d0bf5e6ab83f89ae83f81f1?token=f73e721835cc5c97)
