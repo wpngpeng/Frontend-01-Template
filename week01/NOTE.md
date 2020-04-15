@@ -24,4 +24,18 @@ div.setAttribute('data', `"a"='b'`)
 
 ## [开营记录](https://github.com/JTR354/Frontend-01-Template/blob/master/warming-up/NOTE.md)
 
-## [前端知识体系脑图](http://naotu.baidu.com/file/4b117c428d0bf5e6ab83f89ae83f81f1?token=f73e721835cc5c97)
+# [前端知识体系脑图](http://naotu.baidu.com/file/4b117c428d0bf5e6ab83f89ae83f81f1?token=f73e721835cc5c97)
+
+# 学习方法
+
+### 前端技能模型
+> 技能的最终目标还是为了解决问题，前端技能底层有： 编程能力、架构能力、工程能力、前端知识、领域知识
+
+![](https://github.com/JTR354/Frontend-01-Template/blob/master/week01/skill-model.jpg)
+- 编程能力 处理 难的问题(技术难点,具体事务)
+- 架构能力 处理 大的问题(系统很大,考虑周全)
+- 工程能力 处理 多的问题(多人协作)
+- 前端知识 (前端岗位特有知识)
+- 领域知识 (跟行业相关,图形领域,直播领域,电商领域...)
+
+# 工程体系
