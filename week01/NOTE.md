@@ -20,3 +20,5 @@
 ![avatar](https://github.com/wpngpeng/Frontend-01-Template/blob/master/week01/mindMap/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF.png)
 ## 二、前端与工程体系
 ##### &nbsp;&nbsp;&nbsp;&nbsp;每个行业都有自己的成长体系，前端也一样，有自己的职业发展方向和技能模型，通过课程学习，知道了前端工程师自我成就的一些方式，数据驱动思考方式，还有技能模型分为那几个方向。这些都是自己之前职业道路上都没有考虑到的，这次课程提高了在前端职业发展和技能上的认知，也知道对任何一门技术和职业都要有自己的独立思考和清晰的规划认知，有自己的职业发展脑图。
+![avatar](https://github.com/wpngpeng/Frontend-01-Template/blob/master/week01/mindMap/%E5%B7%A5%E7%A8%8B%E5%B8%88%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95.png)
+
