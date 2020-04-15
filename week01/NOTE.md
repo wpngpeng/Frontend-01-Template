@@ -1,6 +1,6 @@
 # 每周总结可以写在这里
-
-### warming-up
+### [开营记录](https://github.com/JTR354/Frontend-01-Template/blob/master/warming-up/NOTE.md)
+### 热身【warming-up】
 
 ##### 1.编写一个 DOM 编辑器：可以自由地操作一个 iframe（空白）中的 DOM 结构，包括增、删、移动。
 > 不知道
@@ -22,7 +22,12 @@ div.setAttribute('data', `"a"='b'`)
 
 >  [快速排序动画](https://jtr354.github.io/Frontend-01-Template/warming-up/5-quick-sort/qucik-sort.html)
 
-## [开营记录](https://github.com/JTR354/Frontend-01-Template/blob/master/warming-up/NOTE.md)
+---
+# 本周概要
+- [学习方法](#学习方法)
+- 前端知识体系
+- 职业规划
+- 工程体系
 
 # [前端知识体系脑图](http://naotu.baidu.com/file/4b117c428d0bf5e6ab83f89ae83f81f1?token=f73e721835cc5c97)
 
