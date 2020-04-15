@@ -3,7 +3,7 @@
 - [前端知识](#前端知识)
 - [职业规划](#职业规划)
 - [工程体系](#工程体系)
-- [参考](##参考名词：)
+- [参考](#参考名词)
 
 # 开营
 ### [开营记录](https://github.com/JTR354/Frontend-01-Template/blob/master/warming-up/NOTE.md)
@@ -22,6 +22,7 @@
 
 ##### 4.HTML 的中，如何写一个值为 “a”=‘b’ 的属性值？
 ```js
+const div = document.querySelector('div')
 div.setAttribute('data', `"a"='b'`)
 ```
 
@@ -163,7 +164,7 @@ init --> run --> test --> publish
 - 结果(总结分析;统计最终效果汇报)
 
 
-## 参考名词：
+## 参考名词
 [回到顶部](#本周概要 "tips: back")
 - UV：（Unique Visitor）独立访客，统计 1 天内访问某站点的用户数 (以 cookie 为依据)，如果清除了 cookies 或者更换设备访问，计数会加 1。按用户算的，比较真实一点。
 - PV：（Page View）访问量, 即页面浏览量或点击量，在一定统计周期内用户每打开或刷新一个页面就记录 1 次。
@@ -187,7 +188,7 @@ SpriteJS：是跨平台的高性能图形系统，它能够支持 web、node、�
 - QCon：全球软件开发大会（ https://qcon.infoq.cn/2020/beijing/）
 - Closure：闭包（ https://en.wikipedia.org/wiki/Closure_(computer_programming) ）
 
-## 参考链接：
+## 参考链接
 [回到顶部](#本周概要 "tips: back")
 - https://www.w3.org/
 - http://w3school.com/
