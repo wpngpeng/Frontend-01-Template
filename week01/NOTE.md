@@ -17,6 +17,6 @@
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;追溯到知识点后，就整理出一套知识脑图，形成自己的知识体系。
 ##### &nbsp;&nbsp;&nbsp;&nbsp;举个例子:  HTML，我们追溯到 SGML，XML，然后注意到html4和html5的区别，<!doctype html>，然后我们知道SGML的词法又有DTD，Entity，然后又追溯到Entity相关的语法，从上自下而上我们就根据追溯到的知识整理出来一份脑图。其他相关语言也是一样的学习方法。
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学习完构建知识体系课程后，知道如何通过追溯法和整理法去学习一门语言，不要只停留在知识表层的东西，要知道深入去挖掘背后的知识，并学会整理成自己的知识体系，在成熟后分享给更多在技术道路上并肩同行的人，一起成长。
-
+![avatar](https://github.com/wpngpeng/Frontend-01-Template/blob/master/week01/mindMap/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF.png)
 ## 二、前端与工程体系
 ##### &nbsp;&nbsp;&nbsp;&nbsp;每个行业都有自己的成长体系，前端也一样，有自己的职业发展方向和技能模型，通过课程学习，知道了前端工程师自我成就的一些方式，数据驱动思考方式，还有技能模型分为那几个方向。这些都是自己之前职业道路上都没有考虑到的，这次课程提高了在前端职业发展和技能上的认知，也知道对任何一门技术和职业都要有自己的独立思考和清晰的规划认知，有自己的职业发展脑图。
