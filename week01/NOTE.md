@@ -3,6 +3,7 @@
 - [前端知识](#前端知识)
 - [职业规划](#职业规划)
 - [工程体系](#工程体系)
+- [参考](##参考名词：)
 
 # 开营
 ### [开营记录](https://github.com/JTR354/Frontend-01-Template/blob/master/warming-up/NOTE.md)
@@ -31,11 +32,10 @@ div.setAttribute('data', `"a"='b'`)
 ---
 
 # 前端知识
-[回到顶部](#本周概要 "悬停显示")
 ### [前端知识体系脑图](http://naotu.baidu.com/file/4b117c428d0bf5e6ab83f89ae83f81f1?token=f73e721835cc5c97)
 
 # 学习方法
-
+[回到顶部](#本周概要 "tips: back")
 ### 前端技能模型
 > 技能的最终目标还是为了解决问题，前端技主要包括： 编程能力、架构能力、工程能力、前端知识、领域知识
 
@@ -65,6 +65,7 @@ tips:
     建立知识体系的关键点在于完备性,及不多不少刚刚好
 ```
 # 工程体系
+[回到顶部](#本周概要 "tips: back")
 ### 工具链(套件)
 > 规定工具的位置;保证在同一个工具链中各个工具可以相互配合.主要有4个关键工具
 
@@ -105,6 +106,7 @@ init --> run --> test --> publish
         - 登录
 
 # 职业规划
+[回到顶部](#本周概要 "tips: back")
 ### 优秀的前端工程师
 - 拥有领域知识,自成体系
 - 能力(编程,架构,工程)
@@ -162,6 +164,7 @@ init --> run --> test --> publish
 
 
 ## 参考名词：
+[回到顶部](#本周概要 "tips: back")
 - UV：（Unique Visitor）独立访客，统计 1 天内访问某站点的用户数 (以 cookie 为依据)，如果清除了 cookies 或者更换设备访问，计数会加 1。按用户算的，比较真实一点。
 - PV：（Page View）访问量, 即页面浏览量或点击量，在一定统计周期内用户每打开或刷新一个页面就记录 1 次。
 - ctr：点击率（click-through rate）
@@ -185,6 +188,7 @@ SpriteJS：是跨平台的高性能图形系统，它能够支持 web、node、�
 - Closure：闭包（ https://en.wikipedia.org/wiki/Closure_(computer_programming) ）
 
 ## 参考链接：
+[回到顶部](#本周概要 "tips: back")
 - https://www.w3.org/
 - http://w3school.com/
 - https://whatwg.org/
