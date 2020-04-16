@@ -199,7 +199,7 @@ init --> run --> test --> publish
 - ctr：点击率（click-through rate）
 判断用户活跃度：日活除以月活
 - CICD：持续集成 (Continuous Integration) 和持续部署 (Continuous Deployment) 简称。
-SpriteJS：是跨平台的高性能图形系统，它能够支持 web、node、桌面应用和小程序的图形绘制和实现各种动画效果。
+- SpriteJS：是跨平台的高性能图形系统，它能够支持 web、node、桌面应用和小程序的图形绘制和实现各种动画效果。
 - 前端之巅：InfoQ 旗下关注大前端的技术社群
 - 龙书：《编译原理》
 - XMind：思维导图软件（ https://www.xmind.cn/）
