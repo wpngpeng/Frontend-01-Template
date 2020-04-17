@@ -81,5 +81,5 @@ GitHub班级组织仓库：[https://github.com/GeekUniversity/Frontend-01-Templa
 好啦～今天的班会内容就是这样啦！以上内容以及更多大家常问到的问题，也可以在“学习平台”中的常见问题找到哦。  
 [链接：https://u.geekbang.org/lesson/12?article=215842](https://u.geekbang.org/lesson/12?article=215842)
 ### 学期安排
-![](https://github.com/JTR354/Frontend-01-Template/blob/master/warming-up/call2order.jpg)
+![](https://jtr354.github.io/Frontend-01-Template/warming-up/call2order.jpg)
 

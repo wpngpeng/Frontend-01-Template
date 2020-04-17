@@ -40,7 +40,7 @@ div.setAttribute('data', `"a"='b'`)
 ### 前端技能模型
 > 技能的最终目标还是为了解决问题，前端技主要包括： 编程能力、架构能力、工程能力、前端知识、领域知识
 
-![](https://github.com/JTR354/Frontend-01-Template/blob/master/week01/skill-model.jpg)
+![](https://jtr354.github.io/Frontend-01-Template/week01/skill-model.jpg)
 - 编程能力 处理 难的问题(技术难点,具体事务)
 - 架构能力 处理 大的问题(系统很大,考虑周全)
 - 工程能力 处理 多的问题(多人协作)
@@ -174,7 +174,7 @@ init --> run --> test --> publish
 > 混得好的评价是: 技术好,业务敏感度高,老板赏识度高!   
 > 加班的原因,公司的核心目标停滞不前,老板就会找些奇奇怪怪的办法来实现目标!  
 
-![](https://github.com/JTR354/Frontend-01-Template/blob/master/week01/data-driven.jpg)
+![](https://jtr354.github.io/Frontend-01-Template/week01/data-driven.jpg)
 
 - 目标(量化目标;分析业务目标)
 - 现状(展示数据;采集数据建立数据展示系统)
