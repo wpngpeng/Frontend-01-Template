@@ -2,7 +2,7 @@
 #### Grammar:
 - **DecimalLiteral**
 - **BinaryIntegerLiteral** 
-- **OctalIntegerLiteral **
+- **OctalIntegerLiteral**
 - **HexIntegerLiteral**
 
 - **整数**
