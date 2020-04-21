@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<section>
+  <h1>写一个正则表达式 匹配所有 Number 直接量</h1>
+  <pre id="pre"></pre>
+  <input id="input" type="text" placeholder="请输入" style="width: 300px;height: 30px; line-height: 30px;padding: 0 5px;"/>
+  <p id="p"></p>
+
+</section>
+<script src="./_number.js"></script>
+<script>
+  +function() {
+    const input = document.getElementById('input')
+    const p = document.getElementById('p')
+    const pre = document.getElementById('pre')
+    pre.innerText = mainCreateNumber.toString().split('^').join('\n^')
+    input.addEventListener('keyup', (e) => {
+      p.innerText = mainCreateNumber(e.target.value) + ';\n' + Number(e.target.value)
+    })
+  }()
+
+</script>
+</body>
+</html>

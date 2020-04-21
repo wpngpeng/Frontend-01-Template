@@ -72,9 +72,6 @@
   0 1 2 3 4 5 6 7 8 9 a b c d e f A B C D E F
  */
 
-function main() {
-  const flag = /^(0[x|X]([0-9]|[a-f]|[A-F])+)/.test('0xf')
-  console.log(flag)
+function mainCreateNumber(value) {
+  return /^0[x|X]([0-9]|[a-f]|[A-F])+$|^0[o|O][0-7]+$|^0[b|B][0-1]+$|^0$|^[1-9][0-9]*?\.?(([0-9]*)?)([e|E][-|+]?([0-9]|[1-9][0-9])+)?$|\.([0-9]+)([e|E][-|+]?([0-9]|[1-9][0-9])+)?$/.test(value)
 }
-
-main()
