@@ -12,11 +12,12 @@
   - 0型 无限制文法
     - \?::=?
   - 1型 上下文相关文法
-    - \?<A>?::=?<B>?
+    - \?\<A>\?::=?\<B>?
   - 2型 上下文无关文法
     - \<A>::=?
   - 3型 正则文法
-    - \<A>::=<A>?
+    - \<A>::=\<A>?
+    - \<A>::=?\<A> (不允许)
   
 ### 产生式(BNF)
 - 尖括号括起来的名称来表示语法结构名
@@ -28,8 +29,36 @@
 - *表示重复多次
 - |表示或
 - +表示至少一次
+> 终结符: 不会变的字(关键字,字面量,符号等等不会变的东西)  
+非终结符: 会变的字(变量)
 
 > 其他产生式: EBNF ABNF Customized
+
+```bash
+// 四则运算产生式BNF
+<Number> :: = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
+<DecimalNumber> :: = "0" | (("1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9") <Number>*)
+
+<PrimaryExpression> :: =
+   <DecimalNumber> |
+  "(" <LogicExpression> ")"
+
+<MultiplicationExpression> :: =
+  <PrimaryExpression> |
+  <Multiplication> "*" <PrimaryExpression> |
+  <Multiplication> "/" <PrimaryExpression>
+
+<AdditionExpression> :: =
+  <MultiplicationExpression> |
+  <AdditionExpression> "+" <MultiplicationExpression> |
+  <AdditionExpression> "-" <MultiplicationExpression>
+
+<LogicExpression> :: =
+  <AdditionExpression> |
+  <LogicExpression> "||" <AdditionExpression> |
+  <LogicExpression> "&&" <AdditionExpression>
+```
 
 ### 图灵完备性
 - 图灵完备性
