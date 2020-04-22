@@ -22,6 +22,83 @@
 /^0[x|X]([0-9]|[a-f]|[A-F])+$|^0[o|O][0-7]+$|^0[b|B][0-1]+$|^0$|^[1-9][0-9]*?\.?(([0-9]*)?)([e|E][-|+]?([0-9]|[1-9][0-9])+)?$|\.([0-9]+)([e|E][-|+]?([0-9]|[1-9][0-9])+)?$/
 
 ```
+### 写一个 UTF-8 Encoding 的函数
+```js
+/*
+* 思路：
+*   先搞清楚要干啥https://tools.ietf.org/html/rfc3629
+*   找到 UTF-8 definition， 在最下面给出了utf-8的实现方式
+*   在结合ecma标准定义的范围
+*/
+function formatPos(pos, octets) {
+    if (octets == null) {
+      return 'URIError'
+    }
+    let len = octets.length
+    let binary = pos.toString(2).padStart(len, '0')
+    let str = ''
+    for (let i = octets.length -1; i > -1 ; i--) {
+      let tmp = octets[i]
+      let code = octets[i]
+      if (/(x|y|z|u|w)/.test(tmp)) {
+        code = binary[i]
+      }
+      str = code + str
+    }
+    return str.replace(/(.{8})/g, '$1  ')
+  }
+  const utf8Table = new Map([
+    [
+      [0x000, 0x007f, '0zzzzzzz'],
+      formatPos
+    ],
+    [
+      [0x0080, 0x07FF, '110yyyyy10zzzzzz'],
+      formatPos
+    ],
+    [
+      [0x0800, 0xD7FF, '1110xxxx10yyyyyy10zzzzzz'],
+      formatPos
+    ],
+    [
+      [0xD800, 0xDBFF, '11110uuu10uuwwww10xxyyyy10zzzzzz'],
+      formatPos
+    ],
+    [
+      [0xDC00, 0xDFFF, '11110uuu10uuwwww10xxyyyy10zzzzzz'],
+      formatPos
+    ],
+    [
+      [0xD800, 0xDBFF],
+      formatPos
+    ],
+    [
+      [0xDC00, 0xDFFF],
+      formatPos
+    ],
+    [
+      [0xE000, 0xFFFF, '1110xxxx10yyyyyy10zzzzzz'],
+      formatPos
+    ],
+  ])
+  function charToUtf8(char) {
+    const codePoint = char.codePointAt()
+    let code = ''
+    utf8Table.forEach((fn, key) => {
+      if (codePoint >= key[0] && codePoint <= key[1]) {
+        code = fn(codePoint, key[2])
+      }
+    })
+    return code
+  }
+  function utf8Encodings (str) {
+    let code = Array.prototype.map.call(str, char => {
+      return charToUtf8(char)
+    })
+    return code.join(' + ')
+  }
+
+```
 
 # 计算机语言通识
 > 为了更好的理解和查阅JavaScript标准
