@@ -6,6 +6,11 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    body {
+      padding-bottom: 30%;
+    }
+  </style>
 </head>
 <body>
 <section class="number">
@@ -14,91 +19,15 @@
   <input id="inputNumber" type="text" placeholder="请输入" style="width: 300px;height: 30px; line-height: 30px;padding: 0 5px;"/>
   <p id="pNumber"></p>
 </section>
-<section class="utf8">
-  <h1>写一个 UTF-8 Encoding 的函数</h1>
-  <pre id="preUTF8"></pre>
-  <input id="inputUTF8" type="text" placeholder="请输入" maxlength="140" style="width: 300px;height: 30px; line-height: 30px;padding: 0 5px;"/>
-  <p id="pUTF8"></p>
-</section>
 <script>
-  /** 匹配所有 Number 直接量 **/
-  // import './_number.md'
-  function mainCreateNumber(value) {
-    return /^0[x|X]([0-9]|[a-f]|[A-F])+$|^0[o|O][0-7]+$|^0[b|B][0-1]+$|^0$|^[1-9][0-9]*?\.?(([0-9]*)?)([e|E][-|+]?([0-9]|[1-9][0-9])+)?$|\.([0-9]+)([e|E][-|+]?([0-9]|[1-9][0-9])+)?$/.test(value)
-  }
-  /** 写一个 UTF-8 Encoding 的函数 **/
-  // import './_utf8-encodings.md'
-  function formatPos(pos, octets) {
-    if (octets == null) {
-      return 'URIError'
+  window.addEventListener('load', () => {
+    /** 匹配所有 Number 直接量 **/
+    // import './_number.md'
+    function mainCreateNumber(value) {
+      return /^0[x|X]([0-9]|[a-f]|[A-F])+$|^0[o|O][0-7]+$|^0[b|B][0-1]+$|^[-|\+]?0$|^[-|\+]?[1-9][0-9]*?\.?(([0-9]*)?)([e|E][-|+]?([0-9]|[1-9][0-9])+)?$|^[-|\+]?\.([0-9]+)([e|E][-|+]?([0-9]|[1-9][0-9])+)?$|^[-|\+]?Infinity$/.test(value)
     }
-    let len = octets.length
-    let binary = pos.toString(2).padStart(len, '0')
-    let str = ''
-    for (let i = octets.length -1; i > -1 ; i--) {
-      let tmp = octets[i]
-      let code = octets[i]
-      if (/(x|y|z|u|w)/.test(tmp)) {
-        code = binary[i]
-      }
-      str = code + str
-    }
-    return str.replace(/(.{8})/g, '$1  ')
-  }
-  const utf8Table = new Map([
-    [
-      [0x000, 0x007f, '0zzzzzzz'],
-      formatPos
-    ],
-    [
-      [0x0080, 0x07FF, '110yyyyy10zzzzzz'],
-      formatPos
-    ],
-    [
-      [0x0800, 0xD7FF, '1110xxxx10yyyyyy10zzzzzz'],
-      formatPos
-    ],
-    [
-      [0xD800, 0xDBFF, '11110uuu10uuwwww10xxyyyy10zzzzzz'],
-      formatPos
-    ],
-    [
-      [0xDC00, 0xDFFF, '11110uuu10uuwwww10xxyyyy10zzzzzz'],
-      formatPos
-    ],
-    [
-      [0xD800, 0xDBFF],
-      formatPos
-    ],
-    [
-      [0xDC00, 0xDFFF],
-      formatPos
-    ],
-    [
-      [0xE000, 0xFFFF, '1110xxxx10yyyyyy10zzzzzz'],
-      formatPos
-    ],
 
-  ])
-  function charToUtf8(char) {
-    const codePoint = char.codePointAt()
-    let code = ''
-    utf8Table.forEach((fn, key) => {
-      if (codePoint >= key[0] && codePoint <= key[1]) {
-        code = fn(codePoint, key[2])
-      }
-    })
-    return code
-  }
-  function utf8Encodings (str) {
-    let code = Array.prototype.map.call(str, char => {
-      return charToUtf8(char)
-    })
-    return code.join(' + ')
-  }
-
-  window.onload = () => {
-    +function() {
+    +function () {
       const key = 'Number'
       const input = document.getElementById('input' + key)
       const p = document.getElementById('p' + key)
@@ -107,15 +36,104 @@
       input.addEventListener('keyup', (e) => {
         const flag = mainCreateNumber(e.target.value)
         p.innerText = flag + ';\n' + Number(e.target.value)
-        p.style.color = !flag ? 'red' : 'black'
+        p.style.color = !flag ? 'red' : 'blue'
       })
     }()
+  })
+</script>
+<section class="utf8">
+  <h1>写一个 UTF-8 Encoding 的函数</h1>
+  <pre id="preUTF8"></pre>
+  <input id="inputUTF8" type="text" placeholder="请输入" maxlength="140" style="width: 300px;height: 30px; line-height: 30px;padding: 0 5px;"/>
+  <p id="pUTF8"></p>
+</section>
+<script>
+  /** 写一个 UTF-8 Encoding 的函数 **/
+  // import './_utf8-encodings.md'
+  window.addEventListener('load', () => {
+    function createUtf8Methods() {
+      function formatPos(pos, octets) {
+        if (octets == null) {
+          return 'URIError'
+        }
+        let len = octets.length
+        let binary = pos.toString(2).padStart(len, '0')
+        let str = ''
+        for (let i = octets.length - 1; i > -1; i--) {
+          let tmp = octets[i]
+          let code = octets[i]
+          if (/(x|y|z|u|w)/.test(tmp)) {
+            code = binary[i]
+          }
+          str = code + str
+        }
+        return str.replace(/(.{8})/g, '$1  ')
+      }
+
+      const utf8Table = new Map([
+        [
+          [0x000, 0x007f, '0zzzzzzz'],
+          formatPos,
+        ],
+        [
+          [0x0080, 0x07FF, '110yyyyy10zzzzzz'],
+          formatPos,
+        ],
+        [
+          [0x0800, 0xD7FF, '1110xxxx10yyyyyy10zzzzzz'],
+          formatPos,
+        ],
+        [
+          [0xD800, 0xDBFF, '11110uuu10uuwwww10xxyyyy10zzzzzz'],
+          formatPos,
+        ],
+        [
+          [0xDC00, 0xDFFF, '11110uuu10uuwwww10xxyyyy10zzzzzz'],
+          formatPos,
+        ],
+        [
+          [0xD800, 0xDBFF],
+          formatPos,
+        ],
+        [
+          [0xDC00, 0xDFFF],
+          formatPos,
+        ],
+        [
+          [0xE000, 0xFFFF, '1110xxxx10yyyyyy10zzzzzz'],
+          formatPos,
+        ],
+      ])
+
+      function charToUtf8(char) {
+        const codePoint = char.codePointAt()
+        let code = ''
+        utf8Table.forEach((fn, key) => {
+          if (codePoint >= key[0] && codePoint <= key[1]) {
+            code = fn(codePoint, key[2])
+          }
+        })
+        return code
+      }
+
+      function utf8Encodings(str) {
+        let code = Array.prototype.map.call(str, char => {
+          return charToUtf8(char)
+        })
+        return code.join(' + ')
+      }
+
+      return {utf8Encodings}
+    }
+
+    const {utf8Encodings} = createUtf8Methods()
+
     ;+function () {
       const key = 'UTF8'
       const input = document.getElementById('input' + key)
       const p = document.getElementById('p' + key)
       const pre = document.getElementById('pre' + key)
-      pre.innerText = utf8Encodings.toString()
+      pre.innerText = createUtf8Methods.toString()
       input.addEventListener('keyup', (e) => {
         const val = e.target.value
         if (val == null) return
@@ -124,7 +142,7 @@
         p.style.color = 'red'
       })
     }()
-  }
+  })
 </script>
 </body>
 </html>

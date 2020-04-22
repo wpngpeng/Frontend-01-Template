@@ -1,5 +1,6 @@
 # 本周概要
 - [作业练习](#作业练习)
+- [本周心得](#本周心得)
 - [计算机语言通识](#计算机语言通识)
 
 - [参考名词](#参考名词)
@@ -19,7 +20,7 @@
 *     4. 10进制（比较绕，有小数点还有对数的情况）
 *   
 */
-/^0[x|X]([0-9]|[a-f]|[A-F])+$|^0[o|O][0-7]+$|^0[b|B][0-1]+$|^0$|^[1-9][0-9]*?\.?(([0-9]*)?)([e|E][-|+]?([0-9]|[1-9][0-9])+)?$|\.([0-9]+)([e|E][-|+]?([0-9]|[1-9][0-9])+)?$/
+/^0[x|X]([0-9]|[a-f]|[A-F])+$|^0[o|O][0-7]+$|^0[b|B][0-1]+$|^[-|\+]?0$|^[-|\+]?[1-9][0-9]*?\.?(([0-9]*)?)([e|E][-|+]?([0-9]|[1-9][0-9])+)?$|^[-|\+]?\.([0-9]+)([e|E][-|+]?([0-9]|[1-9][0-9])+)?$|^[-|\+]?Infinity$/
 
 ```
 ### 写一个 UTF-8 Encoding 的函数
@@ -30,6 +31,7 @@
 *   找到 UTF-8 definition， 在最下面给出了utf-8的实现方式
 *   在结合ecma标准定义的范围
 */
+// 将标准中的xx替换成对应的二进制码
 function formatPos(pos, octets) {
     if (octets == null) {
       return 'URIError'
@@ -47,6 +49,7 @@ function formatPos(pos, octets) {
     }
     return str.replace(/(.{8})/g, '$1  ')
   }
+// ecma utf8 encoding table18表
   const utf8Table = new Map([
     [
       [0x000, 0x007f, '0zzzzzzz'],
@@ -81,6 +84,7 @@ function formatPos(pos, octets) {
       formatPos
     ],
   ])
+// 根据ecma标准转换
   function charToUtf8(char) {
     const codePoint = char.codePointAt()
     let code = ''
@@ -91,6 +95,7 @@ function formatPos(pos, octets) {
     })
     return code
   }
+// 主函数
   function utf8Encodings (str) {
     let code = Array.prototype.map.call(str, char => {
       return charToUtf8(char)
@@ -99,8 +104,19 @@ function formatPos(pos, octets) {
   }
 
 ```
+#本周心得
+[回到顶部](#本周概要 "tips: back")
+> 通过学习BNF产生式,逐渐对ecma262产生好感,不再畏惧!  
+> 通过作业1也发现了自己的一个知识盲区 1e+3 equal 1×10^3,以前从来没有用过!  
+> 想想当初上手小程序的时候,就是在工作中不断的大量阅读文档然后实践,然后再看文档,才有今天的熟练程度.  
+
+> winter;老师上课轻松,有种抱着爆米花观影的感觉;但他讲的东西却一点都不轻松,基本上都是我不知道我不知道的东西. winter老师真的是人如其名,如冬天里的一股温泉,温暖人心源源不断.只要你愿意去取,总是有的.这就是我们的良师益友.我们的学习榜样.
+
+> 这周其实就是通过学习BNF这一种产生式,能够看得下去ecma的标准,理解词法和类型  
+> 然后通过这个学习的过程,形成自己学习语言的方法论?
 
 # 计算机语言通识
+[回到顶部](#本周概要 "tips: back")
 > 为了更好的理解和查阅JavaScript标准
 ### 语言按语法分类
 - 非形式语言
@@ -184,6 +200,7 @@ function formatPos(pos, octets) {
 ### 一般命令式编程语言
 ![](https://jtr354.github.io/Frontend-01-Template/week02/command-languages.jpg)
 ## 参考名词
+[回到顶部](#本周概要 "tips: back")
 - [乔姆斯基谱系](https://zh.wikipedia.org/wiki/%E4%B9%94%E5%A7%86%E6%96%AF%E5%9F%BA%E8%B0%B1%E7%B3%BB)
 - [Brainfuck](https://zh.wikipedia.org/wiki/Brainfuck)
 - [巴科斯诺尔范式：即巴科斯范式（英语：Backus Normal Form，缩写为 BNF](https://zh.wikipedia.org/wiki/%E5%B7%B4%E7%A7%91%E6%96%AF%E8%8C%83%E5%BC%8F)
