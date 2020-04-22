@@ -6,11 +6,6 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <script>
-    const script = document.createElement('script')
-    script.src = window.location.href.replace('index.html', '') + '_number.js'
-    document.documentElement.append(script)
-  </script>
 </head>
 <body>
 <section>
@@ -21,7 +16,8 @@
 
 </section>
 <!--<script src="https://jtr354.github.io/Frontend-01-Template/week02/_number.js"></script>-->
-<script>
+<script type="module">
+  import {mainCreateNumber} from './_number.js'
   window.onload = () => {
     +function() {
       const input = document.getElementById('input')
@@ -29,7 +25,9 @@
       const pre = document.getElementById('pre')
       pre.innerText = mainCreateNumber.toString().split('^').join('\n^')
       input.addEventListener('keyup', (e) => {
-        p.innerText = mainCreateNumber(e.target.value) + ';\n' + Number(e.target.value)
+        const flag = mainCreateNumber(e.target.value)
+        p.innerText = flag + ';\n' + Number(e.target.value)
+        p.style.color = !flag ? 'red' : 'black'
       })
     }()
   }
