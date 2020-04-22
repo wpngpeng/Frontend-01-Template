@@ -110,3 +110,4 @@ Bjarne Stroustrup（比雅尼·斯特劳斯特鲁普）：1950 年 12 月 30 日
 - Token：记号、标记。JS 里有效的输入元素都可以叫 Token。
 - NBSP ：不换行空格（英语：no-break space，NBSP）是空格字符，用途是禁止自动换行。HTML 页面显示时会自动合并多个连续的空白字符（whitespace character），但该字符是禁止合并的，因此该字符也称作“硬空格”（hard space、fixed space）。Unicode 码点为：U+00A0 no-break space。
 - 零宽空格：（zero-width space, ZWSP）是一种不可打印的 Unicode 字符，用于可能需要换行处。在 HTML 页面中，零宽空格可以替代。但是在一些网页浏览器（例如 Internet Explorer 的版本 6 或以下）不支持零宽空格的功能。
+
