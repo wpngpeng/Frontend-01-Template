@@ -69,3 +69,6 @@
 2、语义
 3、语法
 ```
+###  二、JavaScript | 词法，类型
+#### 1、unicode
+#### 2、InputElement(词法)
