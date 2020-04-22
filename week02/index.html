@@ -57,13 +57,18 @@
           return 'URIError'
         }
         let len = octets.length
-        let binary = pos.toString(2).padStart(len, '0')
+        let binary = pos.toString(2)
         let str = ''
+        let indexBinary = binary.length - 1
         for (let i = octets.length - 1; i > -1; i--) {
           let tmp = octets[i]
-          let code = octets[i]
+          let code = ''
           if (/(x|y|z|u|w)/.test(tmp)) {
-            code = binary[i]
+            code = binary[indexBinary] || '0'
+            indexBinary--
+            // console.log(indexBinary, code)
+          } else {
+            code = octets[i]
           }
           str = code + str
         }
