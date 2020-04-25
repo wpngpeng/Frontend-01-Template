@@ -1,0 +1,131 @@
+[{'positionId': 7034950, 'positionName': '前端开发工程师', 'companyId': 249794, 'companyFullName': '广州布里吉信息科技有限公司', 'companyShortName': '布里吉科技', 'companyLogo': 'i/image2/M00/41/B4/Cgo
+tOVq_qBCAB3vMAAA7Zbo870o305.png', 'companySize': '15-50人', 'industryField': '移动互联网', 'financeStage': '未融资', 'companyLabelList': ['股票期权', '年终分红', '带薪年假', '定期体检'], 'firstType': '
+开发|测试|运维类', 'secondType': '前端开发', 'thirdType': 'WEB前端', 'skillLables': ['前端开发', 'HTML5', 'Vue', 'Web前端'], 'positionLables': ['电商', '本地生活', '前端开发', 'HTML5', 'Vue', 'Web前端'
+], 'industryLables': ['电商', '本地生活', '前端开发', 'HTML5', 'Vue', 'Web前端'], 'createTime': '2020-04-25 10:30:46', 'formatCreateTime': '10:30发布', 'city': '广州', 'district': '番禺区', 'businessZo
+nes': ['大学城'], 'salary': '12k-18k', 'workYear': '3-5年', 'jobNature': '全职', 'education': '本科', 'positionAdvantage': '奖金 绩效 五险一金 下午茶零食', 'imState': 'today', 'lastLogin': '2020-04-25
+10:30:46', 'publisherId': 7270872, 'approve': 1, 'subwayline': '4号线', 'stationname': '大学城北', 'linestaion': '4号线_官洲;4号线_大学城北', 'latitude': '23.056892', 'longitude': '113.386434', 'hitags
+': None, 'resumeProcessRate': 60, 'resumeProcessDay': 2, 'score': 44, 'newScore': 0.0, 'matchScore': 8.083385, 'matchScoreExplain': None, 'query': None, 'explain': None, 'isSchoolJob': 0, 'adWord': 0,
+'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds': [], 'famousCompany': False}, {'positi
+onId': 5556740, 'positionName': '前端开发工程师', 'companyId': 138157, 'companyFullName': '广州冰鸟网络科技有限公司', 'companyShortName': '冰鸟', 'companyLogo': 'i/image/M00/94/DA/CgqKkVia3ROAMjI4AAAeE
+RgEZxE420.jpg', 'companySize': '150-500人', 'industryField': '移动互联网,游戏', 'financeStage': '上市公司', 'companyLabelList': [], 'firstType': '开发|测试|运维类', 'secondType': '前端开发', 'thirdType
+': 'WEB前端', 'skillLables': ['前端开发'], 'positionLables': ['游戏', '前端开发'], 'industryLables': ['游戏', '前端开发'], 'createTime': '2020-04-25 10:19:22', 'formatCreateTime': '10:19发布', 'city':
+'广州', 'district': '天河区', 'businessZones': ['天河城', '岗顶', '石牌'], 'salary': '5k-10k', 'workYear': '1-3年', 'jobNature': '全职', 'education': '本科', 'positionAdvantage': '六险一金、绩效奖金、
+高餐补、福利多多', 'imState': 'today', 'lastLogin': '2020-04-25 10:19:21', 'publisherId': 5570557, 'approve': 1, 'subwayline': '3号线', 'stationname': '华师', 'linestaion': '1号线_体育西路;1号线_体育中
+心;3号线_体育西路;3号线_石牌桥;3号线_岗顶;3号线_华师;3号线(北延段)_林和西;3号线(北延段)_体育西路;APM线_黄埔大道;APM线_天河南;APM线_体育中心南;APM线_林和西', 'latitude': '23.132802', 'longitude': '113.3
+34935', 'hitags': None, 'resumeProcessRate': 100, 'resumeProcessDay': 2, 'score': 43, 'newScore': 0.0, 'matchScore': 8.005123, 'matchScoreExplain': None, 'query': None, 'explain': None, 'isSchoolJob':
+0, 'adWord': 0, 'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds': [], 'famousCompany':
+False}, {'positionId': 5174596, 'positionName': '前端开发工程师', 'companyId': 171496, 'companyFullName': '广东高乐教育科技有限公司', 'companyShortName': '高乐教育', 'companyLogo': 'i/image2/M01/93/51/
+CgoB5lusUwGAM91vAAH8Zt7xH3U820.png', 'companySize': '50-150人', 'industryField': '移动互联网', 'financeStage': '上市公司', 'companyLabelList': ['五险一金', '岗位晋升', '双休', '技能培训'], 'firstType':
+ '开发|测试|运维类', 'secondType': '移动前端开发', 'thirdType': 'WEB前端', 'skillLables': ['前端开发', 'Angularjs', 'Javascript', 'Node.js'], 'positionLables': ['教育', '前端开发', 'Angularjs', 'Javasc
+ript', 'Node.js'], 'industryLables': ['教育', '前端开发', 'Angularjs', 'Javascript', 'Node.js'], 'createTime': '2020-04-25 10:31:37', 'formatCreateTime': '10:31发布', 'city': '广州', 'district': '天河
+区', 'businessZones': None, 'salary': '9k-12k', 'workYear': '1-3年', 'jobNature': '全职', 'education': '本科', 'positionAdvantage': '五险一金,年终奖励,双休,发展空间大', 'imState': 'today', 'lastLogin':
+ '2020-04-25 10:31:36', 'publisherId': 11468525, 'approve': 1, 'subwayline': None, 'stationname': None, 'linestaion': None, 'latitude': '23.170802', 'longitude': '113.409695', 'hitags': None, 'resumePr
+ocessRate': 95, 'resumeProcessDay': 1, 'score': 40, 'newScore': 0.0, 'matchScore': 7.3846145, 'matchScoreExplain': None, 'query': None, 'explain': None, 'isSchoolJob': 0, 'adWord': 0, 'plus': None, 'pc
+Show': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds': [], 'famousCompany': False}, {'positionId': 6839555, '
+positionName': '前端工程师', 'companyId': 144589, 'companyFullName': '广州平云信息科技有限公司', 'companyShortName': '平云科技', 'companyLogo': 'i/image/M00/AB/D9/CgqKkVizyK-ABQvNAAAbwGLa6MY237.png', '
+companySize': '50-150人', 'industryField': '移动互联网,企业服务', 'financeStage': '不需要融资', 'companyLabelList': ['年底双薪', '专项奖金', '年终分红', '年度旅游'], 'firstType': '开发|测试|运维类', 's
+econdType': '前端开发', 'thirdType': 'WEB前端', 'skillLables': ['Vue', '前端开发'], 'positionLables': ['移动互联网', 'Vue', '前端开发'], 'industryLables': ['移动互联网', 'Vue', '前端开发'], 'createTime
+': '2020-04-25 10:05:11', 'formatCreateTime': '10:05发布', 'city': '广州', 'district': '天河区', 'businessZones': None, 'salary': '8k-12k', 'workYear': '1-3年', 'jobNature': '全职', 'education': '本科'
+, 'positionAdvantage': '五险一金，薪酬福利好，晋升空间大', 'imState': 'today', 'lastLogin': '2020-04-25 10:05:11', 'publisherId': 5938933, 'approve': 1, 'subwayline': None, 'stationname': None, 'linest
+aion': None, 'latitude': '23.164437', 'longitude': '113.401403', 'hitags': None, 'resumeProcessRate': 14, 'resumeProcessDay': 1, 'score': 30, 'newScore': 0.0, 'matchScore': 5.5510387, 'matchScoreExplai
+n': None, 'query': None, 'explain': None, 'isSchoolJob': 0, 'adWord': 0, 'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0,
+'count': 0, 'aggregatePositionIds': [], 'famousCompany': False}, {'positionId': 7045369, 'positionName': '前端开发工程师', 'companyId': 223918, 'companyFullName': '上海圣识网络科技有限公司', 'companySh
+ortName': '圣识网络', 'companyLogo': 'i/image/M00/53/A8/CgpFT1l_-EWAJOtHAABC0mjPkpk345.jpg', 'companySize': '15-50人', 'industryField': '游戏', 'financeStage': 'A轮', 'companyLabelList': ['领导好', '扁
+平管理', '五险一金', '年终分红'], 'firstType': '开发|测试|运维类', 'secondType': '前端开发', 'thirdType': 'WEB前端', 'skillLables': ['Vue', 'Web前端', '移动端', '前端开发'], 'positionLables': ['游戏',
+'Vue', 'Web前端', '移动端', '前端开发'], 'industryLables': ['游戏', 'Vue', 'Web前端', '移动端', '前端开发'], 'createTime': '2020-04-25 10:05:21', 'formatCreateTime': '10:05发布', 'city': '广州', 'distr
+ict': '天河区', 'businessZones': None, 'salary': '6k-10k', 'workYear': '1-3年', 'jobNature': '全职', 'education': '大专', 'positionAdvantage': '五险一金 年终奖 弹性工作时间', 'imState': 'today', 'lastL
+ogin': '2020-04-25 10:05:21', 'publisherId': 9052624, 'approve': 1, 'subwayline': '5号线', 'stationname': '科韵路', 'linestaion': '5号线_科韵路', 'latitude': '23.123445', 'longitude': '113.377017', 'hi
+tags': None, 'resumeProcessRate': 100, 'resumeProcessDay': 1, 'score': 30, 'newScore': 0.0, 'matchScore': 5.545449, 'matchScoreExplain': None, 'query': None, 'explain': None, 'isSchoolJob': 0, 'adWord'
+: 0, 'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds': [], 'famousCompany': False}, {'p
+ositionId': 6917389, 'positionName': '前端开发工程师', 'companyId': 465070, 'companyFullName': '前海爱讯科技（深圳）有限公司广州分公司', 'companyShortName': '前海爱讯科技（深圳）有限公司广州分公司', 'c
+ompanyLogo': 'i/image2/M01/A8/30/CgoB5lvlMWmAJ0OwAABcYWwLBog210.jpg', 'companySize': '50-150人', 'industryField': '移动互联网', 'financeStage': '不需要融资', 'companyLabelList': ['猫猫狗狗任撸', '高学
+历海归多', '14薪+奖金', '氛围浓郁园区'], 'firstType': '开发|测试|运维类', 'secondType': '前端开发', 'thirdType': 'WEB前端', 'skillLables': ['前端开发', 'React native', 'Vue', '移动端'], 'positionLables
+': ['旅游', '移动互联网', '前端开发', 'React native', 'Vue', '移动端'], 'industryLables': ['旅游', '移动互联网', '前端开发', 'React native', 'Vue', '移动端'], 'createTime': '2020-04-25 09:58:54', 'form
+atCreateTime': '09:58发布', 'city': '广州', 'district': '海珠区', 'businessZones': None, 'salary': '9k-12k', 'workYear': '1-3年', 'jobNature': '全职', 'education': '大专', 'positionAdvantage': '朝阳企
+业/办公环境优美/氛围好', 'imState': 'today', 'lastLogin': '2020-04-25 09:58:53', 'publisherId': 7710292, 'approve': 1, 'subwayline': '3号线', 'stationname': '赤岗', 'linestaion': '3号线_客村;3号线_广州
+塔;8号线_客村;8号线_赤岗;APM线_海心沙', 'latitude': '23.098767', 'longitude': '113.32513', 'hitags': None, 'resumeProcessRate': 100, 'resumeProcessDay': 1, 'score': 29, 'newScore': 0.0, 'matchScore': 5
+.5286784, 'matchScoreExplain': None, 'query': None, 'explain': None, 'isSchoolJob': 0, 'adWord': 0, 'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExpla
+in': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds': [], 'famousCompany': False}, {'positionId': 7043373, 'positionName': '前端工程师', 'companyId': 116669313, 'companyFullName': '上海齐岛信
+息科技有限公司', 'companyShortName': '齐岛信息', 'companyLogo': 'i/image2/M01/AC/F5/CgotOV3bz3aAaRNRAAAm5ZOj0kI188.png', 'companySize': '少于15人', 'industryField': '电商,文娱丨内容', 'financeStage': '
+不需要融资', 'companyLabelList': [], 'firstType': '开发|测试|运维类', 'secondType': '前端开发', 'thirdType': 'HTML5', 'skillLables': ['HTML5', 'Vue', 'Web前端', 'Javascript'], 'positionLables': ['电商'
+, 'HTML5', 'Vue', 'Web前端', 'Javascript'], 'industryLables': ['电商', 'HTML5', 'Vue', 'Web前端', 'Javascript'], 'createTime': '2020-04-25 09:56:32', 'formatCreateTime': '09:56发布', 'city': '广州', 'd
+istrict': '海珠区', 'businessZones': ['昌岗'], 'salary': '12k-17k', 'workYear': '3-5年', 'jobNature': '全职', 'education': '本科', 'positionAdvantage': '好学开放的技术氛围', 'imState': 'today', 'lastLo
+gin': '2020-04-25 09:56:31', 'publisherId': 15700072, 'approve': 0, 'subwayline': '8号线', 'stationname': '沙园', 'linestaion': '8号线_沙园;8号线_宝岗大道;广佛线_燕岗;广佛线_沙园', 'latitude': '23.0781
+95', 'longitude': '113.262716', 'hitags': None, 'resumeProcessRate': 12, 'resumeProcessDay': 2, 'score': 29, 'newScore': 0.0, 'matchScore': 5.5174975, 'matchScoreExplain': None, 'query': None, 'explain
+': None, 'isSchoolJob': 0, 'adWord': 0, 'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds
+': [], 'famousCompany': False}, {'positionId': 5336985, 'positionName': '前端开发工程师', 'companyId': 425365, 'companyFullName': '广汽蔚来新能源汽车科技有限公司', 'companyShortName': '广汽蔚来', 'comp
+anyLogo': 'i/image2/M01/46/40/CgotOV0AxI6AG5K3AABlgtyBrDQ545.jpg', 'companySize': '150-500人', 'industryField': '汽车丨出行', 'financeStage': 'A轮', 'companyLabelList': ['股票期权', '交通补助', '带薪年
+假', '午餐补助'], 'firstType': '开发|测试|运维类', 'secondType': '移动前端开发', 'thirdType': 'WEB前端', 'skillLables': ['移动端', '前端开发', 'HTML5', 'Web前端'], 'positionLables': ['汽车', '移动互联
+网', '移动端', '前端开发', 'HTML5', 'Web前端'], 'industryLables': ['汽车', '移动互联网', '移动端', '前端开发', 'HTML5', 'Web前端'], 'createTime': '2020-04-25 09:28:45', 'formatCreateTime': '09:28发布',
+ 'city': '广州', 'district': '南沙区', 'businessZones': None, 'salary': '18k-30k', 'workYear': '5-10年', 'jobNature': '全职', 'education': '本科', 'positionAdvantage': '有趣，有爱，有未来', 'imState':
+'today', 'lastLogin': '2020-04-25 09:43:12', 'publisherId': 10691618, 'approve': 1, 'subwayline': '4号线', 'stationname': '金洲', 'linestaion': '4号线_金洲;4号线_飞沙角', 'latitude': '22.793742', 'long
+itude': '113.546386', 'hitags': None, 'resumeProcessRate': 60, 'resumeProcessDay': 2, 'score': 29, 'newScore': 0.0, 'matchScore': 5.428055, 'matchScoreExplain': None, 'query': None, 'explain': None, 'i
+sSchoolJob': 0, 'adWord': 0, 'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds': [], 'fam
+ousCompany': True}, {'positionId': 6995809, 'positionName': '前端开发工程师', 'companyId': 116654, 'companyFullName': '恒腾网络集团有限公司', 'companyShortName': '恒腾网络', 'companyLogo': 'i/image/M00
+/08/5F/CgqKkVbP5nmACaIOAACHN2qFTz0504.jpg', 'companySize': '150-500人', 'industryField': '消费生活', 'financeStage': '上市公司', 'companyLabelList': ['帅哥多', '五险一金', '岗位晋升', '带薪年假'], 'fir
+stType': '开发|测试|运维类', 'secondType': '前端开发', 'thirdType': 'WEB前端', 'skillLables': ['移动端'], 'positionLables': ['电商', '新零售', '移动端'], 'industryLables': ['电商', '新零售', '移动端'],
+ 'createTime': '2020-04-25 09:30:37', 'formatCreateTime': '09:30发布', 'city': '广州', 'district': '天河区', 'businessZones': ['珠江新城', '冼村', '跑马场'], 'salary': '15k-25k', 'workYear': '3-5年', '
+jobNature': '全职', 'education': '本科', 'positionAdvantage': '名企背景、上市公司、福利待遇好', 'imState': 'today', 'lastLogin': '2020-04-25 09:30:37', 'publisherId': 9358176, 'approve': 1, 'subwayline
+': '3号线', 'stationname': '天河南', 'linestaion': '1号线_体育西路;1号线_体育中心;3号线_珠江新城;3号线_体育西路;3号线_石牌桥;3号线(北延段)_体育西路;5号线_珠江新城;5号线_猎德;APM线_大剧院;APM线_花城大道
+;APM线_妇儿中心;APM线_黄埔大道;APM线_天河南;APM线_体育中心南', 'latitude': '23.126659', 'longitude': '113.327388', 'hitags': None, 'resumeProcessRate': 49, 'resumeProcessDay': 1, 'score': 28, 'newScore
+': 0.0, 'matchScore': 5.4224644, 'matchScoreExplain': None, 'query': None, 'explain': None, 'isSchoolJob': 0, 'adWord': 0, 'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': Non
+e, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds': [], 'famousCompany': False}, {'positionId': 7031484, 'positionName': '前端开发工程师', 'companyId': 753587, 'compan
+yFullName': '广州东辰网络科技有限公司', 'companyShortName': '东辰网络', 'companyLogo': 'i/image2/M01/6D/8C/CgotOV1BgPWAa0naAAAkBnHYz-A932.png', 'companySize': '50-150人', 'industryField': '软件开发 社
+交', 'financeStage': '不需要融资', 'companyLabelList': ['年底双薪', '定期体检', '带薪年假', '绩效奖金'], 'firstType': '开发|测试|运维类', 'secondType': '前端开发', 'thirdType': 'HTML5', 'skillLables':
+['前端开发', 'HTML'], 'positionLables': ['社交', '前端开发', 'HTML'], 'industryLables': ['社交', '前端开发', 'HTML'], 'createTime': '2020-04-25 09:25:07', 'formatCreateTime': '09:25发布', 'city': '广州
+', 'district': '天河区', 'businessZones': ['车陂'], 'salary': '10k-15k', 'workYear': '1-3年', 'jobNature': '全职', 'education': '本科', 'positionAdvantage': '五险一金 带薪年假 年度体检 年终奖', 'imStat
+e': 'today', 'lastLogin': '2020-04-25 09:25:07', 'publisherId': 8632300, 'approve': 1, 'subwayline': '5号线', 'stationname': '车陂南', 'linestaion': '4号线_车陂;4号线_车陂南;5号线_车陂南;5号线_东圃', '
+latitude': '23.119794', 'longitude': '113.400876', 'hitags': None, 'resumeProcessRate': 100, 'resumeProcessDay': 1, 'score': 28, 'newScore': 0.0, 'matchScore': 5.405694, 'matchScoreExplain': None, 'que
+ry': None, 'explain': None, 'isSchoolJob': 0, 'adWord': 0, 'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'a
+ggregatePositionIds': [], 'famousCompany': False}, {'positionId': 7016638, 'positionName': '前端工程师', 'companyId': 13709, 'companyFullName': '广州大麦信息科技有限公司', 'companyShortName': '大麦电商
+', 'companyLogo': 'i/image/M00/35/09/CgpEMlk8_yCAQlmaAAB-EYgFCZI591.jpg', 'companySize': '150-500人', 'industryField': '电商,企业服务', 'financeStage': '天使轮', 'companyLabelList': ['绩效奖金', '五险
+一金', '带薪年假', '年度旅游'], 'firstType': '开发|测试|运维类', 'secondType': '前端开发', 'thirdType': 'WEB前端', 'skillLables': [], 'positionLables': ['电商'], 'industryLables': ['电商'], 'createTime
+': '2020-04-25 09:13:22', 'formatCreateTime': '09:13发布', 'city': '广州', 'district': '越秀区', 'businessZones': ['解放南', '大新', '海珠广场'], 'salary': '9k-15k', 'workYear': '3-5年', 'jobNature': '
+全职', 'education': '本科', 'positionAdvantage': '五险一金、双休', 'imState': 'today', 'lastLogin': '2020-04-25 09:14:21', 'publisherId': 10334114, 'approve': 1, 'subwayline': '2号线', 'stationname': '
+公园前', 'linestaion': '1号线_西门口;1号线_公园前;2号线_市二宫;2号线_海珠广场;2号线_公园前;6号线_北京路;6号线_海珠广场;6号线_一德路', 'latitude': '23.11698', 'longitude': '113.26233', 'hitags': None, '
+resumeProcessRate': 77, 'resumeProcessDay': 1, 'score': 28, 'newScore': 0.0, 'matchScore': 5.360973, 'matchScoreExplain': None, 'query': None, 'explain': None, 'isSchoolJob': 0, 'adWord': 0, 'plus': No
+ne, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds': [], 'famousCompany': False}, {'positionId': 695
+6550, 'positionName': '前端开发工程师', 'companyId': 68025, 'companyFullName': '广州思迈特软件有限公司', 'companyShortName': '广州思迈特', 'companyLogo': 'i/image/M00/1E/4D/CgpEMlkIK3eAdUPWAAAKy0lENgU0
+53.jpg', 'companySize': '150-500人', 'industryField': '企业服务,数据服务', 'financeStage': 'A轮', 'companyLabelList': ['技能培训', '带薪年假', '年度旅游', '扁平管理'], 'firstType': '开发|测试|运维类',
+'secondType': '前端开发', 'thirdType': 'WEB前端', 'skillLables': ['前端开发', 'HTML', 'CSS', 'HTML5'], 'positionLables': ['前端开发', 'HTML', 'CSS', 'HTML5'], 'industryLables': [], 'createTime': '2020-
+04-25 08:53:13', 'formatCreateTime': '08:53发布', 'city': '广州', 'district': '天河区', 'businessZones': None, 'salary': '18k-25k', 'workYear': '3-5年', 'jobNature': '全职', 'education': '本科', 'posit
+ionAdvantage': '弹性上下班 工作氛围好 扁平管理', 'imState': 'today', 'lastLogin': '2020-04-25 09:27:33', 'publisherId': 9093934, 'approve': 1, 'subwayline': None, 'stationname': None, 'linestaion': Non
+e, 'latitude': '23.172312', 'longitude': '113.410427', 'hitags': None, 'resumeProcessRate': 100, 'resumeProcessDay': 1, 'score': 27, 'newScore': 0.0, 'matchScore': 5.293891, 'matchScoreExplain': None,
+'query': None, 'explain': None, 'isSchoolJob': 0, 'adWord': 0, 'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0
+, 'aggregatePositionIds': [], 'famousCompany': False}, {'positionId': 6288744, 'positionName': '前端开发工程师', 'companyId': 73713, 'companyFullName': '广东联通通信建设有限公司', 'companyShortName': '
+广东联通通信建设有限公司', 'companyLogo': 'image1/M00/2A/C6/CgYXBlVtSg-ANbY0AABI3c5XSQQ299.jpg', 'companySize': '150-500人', 'industryField': '其他', 'financeStage': '上市公司', 'companyLabelList': ['
+技能培训', '年底双薪', '带薪年假', '绩效奖金'], 'firstType': '开发|测试|运维类', 'secondType': '移动前端开发', 'thirdType': 'HTML5', 'skillLables': ['前端开发', 'Node.js'], 'positionLables': ['前端开发
+', 'Node.js'], 'industryLables': [], 'createTime': '2020-04-25 07:45:32', 'formatCreateTime': '07:45发布', 'city': '广州', 'district': '天河区', 'businessZones': None, 'salary': '8k-12k', 'workYear': '
+1-3年', 'jobNature': '全职', 'education': '本科', 'positionAdvantage': '五险一金，过节礼品，生日津贴，国企平台', 'imState': 'disabled', 'lastLogin': '2020-04-25 09:45:22', 'publisherId': 1821490, 'appr
+ove': 1, 'subwayline': '3号线', 'stationname': '岗顶', 'linestaion': '3号线_石牌桥;3号线_岗顶;5号线_猎德;5号线_潭村', 'latitude': '23.12588', 'longitude': '113.34204', 'hitags': None, 'resumeProcessRat
+e': 0, 'resumeProcessDay': 0, 'score': 26, 'newScore': 0.0, 'matchScore': 5.081465, 'matchScoreExplain': None, 'query': None, 'explain': None, 'isSchoolJob': 0, 'adWord': 0, 'plus': None, 'pcShow': 0,
+'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds': [], 'famousCompany': False}, {'positionId': 6395050, 'positionNa
+me': '前端开发工程师', 'companyId': 102855, 'companyFullName': '广州众米信息科技有限公司', 'companyShortName': '奥壹技术', 'companyLogo': 'image2/M00/10/62/CgpzWlYt_BiAVCFiAAA1Ql_Hejw303.png?cc=0.57399
+4153412059', 'companySize': '少于15人', 'industryField': '移动互联网,电商', 'financeStage': 'A轮', 'companyLabelList': ['节日礼物', '专项奖金', '绩效奖金', '年度旅游'], 'firstType': '开发|测试|运维类',
+ 'secondType': '移动前端开发', 'thirdType': 'HTML5', 'skillLables': ['移动端', '前端开发', 'HTML5'], 'positionLables': ['社交', '移动互联网', '移动端', '前端开发', 'HTML5'], 'industryLables': ['社交',
+'移动互联网', '移动端', '前端开发', 'HTML5'], 'createTime': '2020-04-25 10:15:12', 'formatCreateTime': '10:15发布', 'city': '广州', 'district': '天河区', 'businessZones': ['天河软件园'], 'salary': '8k-
+12k', 'workYear': '1-3年', 'jobNature': '全职', 'education': '本科', 'positionAdvantage': '发展前景好，团队氛围好，工作有激情，', 'imState': 'threeDays', 'lastLogin': '2020-04-25 10:15:11', 'publisherI
+d': 2913893, 'approve': 1, 'subwayline': '3号线', 'stationname': '华师', 'linestaion': '1号线_体育西路;1号线_体育中心;3号线_体育西路;3号线_石牌桥;3号线_岗顶;3号线_华师;3号线(北延段)_林和西;3号线(北延段
+)_体育西路;APM线_天河南;APM线_体育中心南;APM线_林和西', 'latitude': '23.137986', 'longitude': '113.33368', 'hitags': None, 'resumeProcessRate': 7, 'resumeProcessDay': 0, 'score': 23, 'newScore': 0.0, '
+matchScore': 5.5845795, 'matchScoreExplain': None, 'query': None, 'explain': None, 'isSchoolJob': 0, 'adWord': 0, 'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promo
+tionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds': [], 'famousCompany': False}, {'positionId': 7038274, 'positionName': '前端开发工程师', 'companyId': 463302, 'companyFullName
+': '广州市果肉教育科技有限公司', 'companyShortName': '广州市果肉教育科技有限公司', 'companyLogo': 'i/image2/M01/BA/DC/CgoB5lwZ8IeAIueUAAA7PUJiTPQ127.png', 'companySize': '500-2000人', 'industryField':
+'移动互联网,教育', 'financeStage': '不需要融资', 'companyLabelList': ['年底双薪', '弹性工作', '年度旅游', '节日礼物'], 'firstType': '开发|测试|运维类', 'secondType': '前端开发', 'thirdType': 'WEB前端',
+ 'skillLables': ['前端开发', 'React native', 'Node.js'], 'positionLables': ['移动互联网', '教育', '前端开发', 'React native', 'Node.js'], 'industryLables': ['移动互联网', '教育', '前端开发', 'React nat
+ive', 'Node.js'], 'createTime': '2020-04-25 10:09:13', 'formatCreateTime': '10:09发布', 'city': '广州', 'district': '越秀区', 'businessZones': ['岭南'], 'salary': '13k-26k', 'workYear': '1-3年', 'jobNa
+ture': '全职', 'education': '本科', 'positionAdvantage': '前瞻性产品 精英团队 包两餐 七险一金', 'imState': 'today', 'lastLogin': '2020-04-25 10:09:13', 'publisherId': 12997644, 'approve': 1, 'subwaylin
+e': '2号线', 'stationname': '公园前', 'linestaion': '1号线_西门口;1号线_公园前;1号线_农讲所;2号线_海珠广场;2号线_公园前;2号线_纪念堂;6号线_北京路;6号线_海珠广场;6号线_一德路', 'latitude': '23.124995',
+'longitude': '113.262984', 'hitags': None, 'resumeProcessRate': 50, 'resumeProcessDay': 3, 'score': 23, 'newScore': 0.0, 'matchScore': 5.562219, 'matchScoreExplain': None, 'query': None, 'explain': Non
+e, 'isSchoolJob': 0, 'adWord': 0, 'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds': [],
+ 'famousCompany': False}]
+
+
+
+{'positionId': 7034950, 'positionName': '前端开发工程师', 'companyId': 249794, 'companyFullName': '广州布里吉信息科技有限公司', 'companyShortName': '布里吉科技', 'companyLogo': 'i/image2/M00/41/B4/Cgo
+tOVq_qBCAB3vMAAA7Zbo870o305.png', 'companySize': '15-50人', 'industryField': '移动互联网', 'financeStage': '未融资', 'companyLabelList': ['股票期权', '年终分红', '带薪年假', '定期体检'], 'firstType': '
+开发|测试|运维类', 'secondType': '前端开发', 'thirdType': 'WEB前端', 'skillLables': ['前端开发', 'HTML5', 'Vue', 'Web前端'], 'positionLables': ['电商', '本地生活', '前端开发', 'HTML5', 'Vue', 'Web前端'
+], 'industryLables': ['电商', '本地生活', '前端开发', 'HTML5', 'Vue', 'Web前端'], 'createTime': '2020-04-25 10:30:46', 'formatCreateTime': '10:30发布', 'city': '广州', 'district': '番禺区', 'businessZo
+nes': ['大学城'], 'salary': '12k-18k', 'workYear': '3-5年', 'jobNature': '全职', 'education': '本科', 'positionAdvantage': '奖金 绩效 五险一金 下午茶零食', 'imState': 'today', 'lastLogin': '2020-04-25
+10:30:46', 'publisherId': 7270872, 'approve': 1, 'subwayline': '4号线', 'stationname': '大学城北', 'linestaion': '4号线_官洲;4号线_大学城北', 'latitude': '23.056892', 'longitude': '113.386434', 'hitags
+': None, 'resumeProcessRate': 60, 'resumeProcessDay': 2, 'score': 44, 'newScore': 0.0, 'matchScore': 8.083385, 'matchScoreExplain': None, 'query': None, 'explain': None, 'isSchoolJob': 0, 'adWord': 0,
+'plus': None, 'pcShow': 0, 'appShow': 0, 'deliver': 0, 'gradeDescription': None, 'promotionScoreExplain': None, 'isHotHire': 0, 'count': 0, 'aggregatePositionIds': [], 'famousCompany': False}
