@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="renderer" content="webkit">
+  <title>Document</title>
+  <style>
+    input {
+      width: 300px;
+      height: 25px;
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <h1>String to Number</h1>
+  <input type="text" id="input1">
+  <p id="p1"></p>
+</section>
+<script>
+  /**convertStringToNumber**/
+  void function () {
+    const input = document.getElementById('input1')
+    const p = document.getElementById('p1')
+    const rule = {
+      '0b': 2,
+      '0o': 8,
+      '0x': 16
+    }
+    const queue = {
+      a: 10,
+      b: 11,
+      d: 12,
+      e: 13,
+      f: 14
+    }
+    input.addEventListener('keyup', e => {
+      const val = e.target.value
+      p.innerText = convertStringToNumber(val) + '\n' + Number(val)
+    })
+    function convertStringToNumber(str, x = 10) {
+      if (isNaN(str)) return NaN
+      for (let r in rule) {
+        if (new RegExp('^' + r).test(str)) {
+          str = str.replace(r, '')
+          x = rule[r]
+          break
+        }
+      }
+      let chars = str.split('.')
+      let int = chars[0].split('')
+      let decimal = chars[1] && chars[1].split('')
+      let number = 0
+      let len = int.length - 1
+      let tmp
+      const flagCode = '0'.codePointAt()
+      int.forEach((item, index) => {
+        let itemCode = item.codePointAt(0)
+        if (x === 16) {
+          itemCode = item === 'a' ? flagCode + 10 ?
+        }
+        tmp = itemCode  - flagCode
+        tmp *= x ** (len - index)
+        number += tmp
+      })
+      decimal instanceof Array && decimal.forEach((item, index) => {
+        tmp = item.codePointAt(0)  - flagCode
+        tmp /= x ** (index + 1)
+        number += tmp
+      })
+      return number
+    }
+  }()
+</script>
+</body>
+</html>
