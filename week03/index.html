@@ -34,9 +34,10 @@
     const queue = {
       a: 10,
       b: 11,
-      d: 12,
-      e: 13,
-      f: 14
+      c: 12,
+      d: 13,
+      e: 14,
+      f: 15
     }
     input.addEventListener('keyup', e => {
       const val = e.target.value
@@ -61,7 +62,7 @@
       int.forEach((item, index) => {
         let itemCode = item.codePointAt(0)
         if (x === 16) {
-          itemCode = item === 'a' ? flagCode + 10 ?
+          itemCode = flagCode + queue[item]
         }
         tmp = itemCode  - flagCode
         tmp *= x ** (len - index)
