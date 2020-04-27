@@ -20,6 +20,7 @@
   <h1>String to Number</h1>
   <input type="text" id="input1">
   <p id="p1"></p>
+  <pre id="pre1"></pre>
 </section>
 <script>
   /**convertStringToNumber**/
@@ -31,18 +32,12 @@
       '0o': 8,
       '0x': 16
     }
-    const queue = {
-      a: 10,
-      b: 11,
-      c: 12,
-      d: 13,
-      e: 14,
-      f: 15
-    }
+    const pre = document.getElementById('pre1')
     input.addEventListener('keyup', e => {
       const val = e.target.value
-      p.innerText = convertStringToNumber(val) + '\n' + Number(val)
+      p.innerText = convertStringToNumber(val) + '\n' + Number(val) + '\n'
     })
+    pre.innerText = convertStringToNumber
     function convertStringToNumber(str, x = 10) {
       if (isNaN(str)) return NaN
       for (let r in rule) {
@@ -58,11 +53,14 @@
       let number = 0
       let len = int.length - 1
       let tmp
-      const flagCode = '0'.codePointAt()
+      const flagCode = '0'.codePointAt(0)
       int.forEach((item, index) => {
         let itemCode = item.codePointAt(0)
-        if (x === 16) {
-          itemCode = flagCode + queue[item]
+        if (/[a-f]/.test(item)) {
+          itemCode = flagCode + 10 + item.codePointAt(0) - 'a'.codePointAt(0)
+        }
+        if (/[A-F]/.test(item)) {
+          itemCode = flagCode + 10 + item.codePointAt(0) - 'A'.codePointAt(0)
         }
         tmp = itemCode  - flagCode
         tmp *= x ** (len - index)
@@ -77,5 +75,43 @@
     }
   }()
 </script>
+<section>
+  <h1>Number to String</h1>
+  <input type="text" id="input2">
+  <p id="p2"></p>
+  <pre id="pre2"></pre>
+</section>
 </body>
+<script>
+  void function () {
+    const input = document.getElementById('input2')
+    const p = document.getElementById('p2')
+    const pre = document.getElementById('pre2')
+    input.addEventListener('keyup', e => {
+      const val = e.target.value
+      p.innerText = convertNumberToString(val) + '\n' + String(val)
+    })
+    pre.innerText = convertNumberToString.toString()
+    function convertNumberToString(number, x = 10) {
+      let integer = ~~(number)
+      let tmp = ('' + number).split('.')
+      let faction = tmp[1] ? tmp[1] : ''
+      let string = ''
+      while (integer > 0) {
+        string = integer % x + string
+        integer = ~~(integer / x)
+      }
+      if (faction > 0) {
+        string += '.'
+        let i = 0
+        while (faction.codePointAt(i)) {
+          string += faction.codePointAt(i) - '0'.codePointAt(0)
+          i++
+        }
+      }
+
+      return string
+    }
+  }()
+</script>
 </html>
