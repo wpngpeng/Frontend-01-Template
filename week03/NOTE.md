@@ -1,7 +1,5 @@
 # 本周概要
 - [作业练习](#作业练习)
-- [本周心得](#本周心得)
-- [计算机语言通识](#计算机语言通识)
 
 # 作业练习
 - [StringToNumber & NumberToString](https://jtr354.github.io/Frontend-01-Template/week03/index.html)
