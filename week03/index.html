@@ -93,13 +93,13 @@
     })
     pre.innerText = convertNumberToString.toString()
     function convertNumberToString(number, x = 10) {
-      let integer = ~~(number)
+      let integer = Math.floor(number)
       let tmp = ('' + number).split('.')
       let faction = tmp[1] ? tmp[1] : ''
       let string = ''
       while (integer > 0) {
         string = integer % x + string
-        integer = ~~(integer / x)
+        integer = Math.floor(integer / x)
       }
       if (faction > 0) {
         string += '.'
@@ -109,7 +109,6 @@
           i++
         }
       }
-
       return string
     }
   }()
