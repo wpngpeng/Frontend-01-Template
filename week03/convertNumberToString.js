@@ -8,9 +8,11 @@ const convertNumberToString = (number, x) => {
     string = String(integer % x) + string;
     integer = Math.floor(integer / x);
   }
+  
   if (fraction > 0) {
     string += ".";
   }
+  
   while (fraction >0 && fraction<1) {
     let integer = Math.floor(fraction * x);
     string += integer;
