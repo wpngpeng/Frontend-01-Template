@@ -1,3 +1,4 @@
+
 const convertNumberToString = (number, x) => {
   let integer = Math.floor(number);
   let fraction = number - integer;
