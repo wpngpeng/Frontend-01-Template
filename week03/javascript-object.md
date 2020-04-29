@@ -1,5 +1,23 @@
 # JavaScript 标准里所有的对象
 
+- 内置对象(Built-in Objects)： 由JavaScript语言提供的对象
+  - 固有对象(Intrinsic Objects): 由标准规定, 随着JavaScript运行时创建而自动创建
+  - 原生对象(Native Objects): 可以由用户通过Array,Date等内置构造器或者特殊语法创建的对象
+  - 普通对象(Ordinary Objects):由{} 语法,Object构造器或者class关键字定义的类型创造的对象,它能够被原型继承.
+  
+> 简单来说:   
+    固有对象就是js引擎创建并仅供自身消费的数据结构;  
+    原生对象就是js提供的常用工具对象方便开发者快速生成特定的数据结构;  
+    普通对象就是开发者自定义的数据结构;
+
+
+
+
+
+
+
+
+
 ## 9.4 Built-in Exotic Object Internal Methods and Slots
 
 ### 9.4.1 Bound Function Exotic Objects
