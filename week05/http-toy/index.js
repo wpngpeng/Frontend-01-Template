@@ -1,10 +1,5 @@
 const HttpRequest = require('./http-request')
 
-class Request {
-
-}
-
-
 const request = new HttpRequest({
   port: '8088',
   host: '127.0.0.1',
