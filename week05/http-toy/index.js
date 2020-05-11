@@ -1,5 +1,6 @@
-const HttpRequest = require('./http-request')
-
+const HttpRequest = require('./request')
+const fs = require('fs')
+const path = require('path')
 const request = new HttpRequest({
   port: '8088',
   host: '127.0.0.1',
@@ -16,7 +17,7 @@ const request = new HttpRequest({
   }
 })
 request.send().then(res => {
-  console.log(res)
+  fs.writeFileSync(path.join(__dirname, './ttt'), res.body)
 }).catch(err => {
   console.log(err)
 })

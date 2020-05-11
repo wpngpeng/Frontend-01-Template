@@ -35,12 +35,16 @@
 ## 状态机
 > 逻辑分割
 
+##
+1. request content-length
+2. chunked 中文字符
 
 ## 爬坑
 - netstat -a -n  #各个端口占用
 - netstat -ano   #各个端口占用和进程PID
 - netstat -aon | findstr "8088" 
 - tasklist | findstr "8088" 查看端口号所对应的应用程序
+- taskkill /pid 4456 /F 终止进程
 ```bash
 tasklist | findstr "8088" 
 ```
