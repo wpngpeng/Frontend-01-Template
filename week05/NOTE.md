@@ -16,3 +16,19 @@ HTTP响应也由四个部分组成，分别是：状态行、消息报头、空�
 ![avatar](https://github.com/wpngpeng/Frontend-01-Template/blob/master/week05/image/33.jpg)
 ![avatar](https://github.com/wpngpeng/Frontend-01-Template/blob/master/week05/image/11.png)
 
+- ### 分析
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 29 Nov 2020 18:08:38 GMT
+Content-Type: text/plain
+Content-Length: 203
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+HTTP响应分为Header和Body两部分，我们在Network中看到的Header最重要的几行如下：
+HTTP/1.1 200 OK
+其中，200 是状态码，表示客户端请求成功，OK 是相应的状态描述。
+
+
