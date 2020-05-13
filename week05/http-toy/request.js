@@ -1,5 +1,5 @@
 const net = require('net')
-const {ResponseParser} = require('./parser2')
+const {ResponseParser} = require('./parser')
 class Request {
   constructor(props) {
     this.method = props.method || 'GET'
