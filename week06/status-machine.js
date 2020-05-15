@@ -55,7 +55,7 @@ function matchABABX(string) {
   }
 }
 
-matchABABX('abxab')
+matchABABX('abxababx')
 /*
 状态机挑战版
 function match(pattern,text)
