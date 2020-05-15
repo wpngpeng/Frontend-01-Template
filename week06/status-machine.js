@@ -11,7 +11,7 @@ function matchABABX(string) {
 
   function start(c) {
     if (c === 'a') {
-      return findA
+      return stateA
     } else {
       return start
     }
@@ -21,26 +21,41 @@ function matchABABX(string) {
     return end
   }
 
-  function findA(c) {
+  function stateA(c) {
     if (c === 'b') {
-      return findB
+      return stateB
     } else {
-      return start
+      return start(c)
     }
   }
 
-  function findB(c) {
+  function stateB(c) {
+    if (c === 'a'){
+      return stateA2
+    } else {
+      return start(c)
+    }
+  }
+
+  function stateA2(c) {
+    if (c === 'a') {
+      return stateB2(c)
+    } else {
+      return start(c)
+    }
+
+  }
+
+  function stateB2(c) {
     if (c === 'x') {
       return end
-    } else if (c === 'a'){
-      return findA
     } else {
-      return start
+      return stateB(c)
     }
   }
 }
 
-
+matchABABX('abxab')
 /*
 状态机挑战版
 function match(pattern,text)
