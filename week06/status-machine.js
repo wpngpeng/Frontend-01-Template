@@ -11,7 +11,7 @@ function matchABABX(string) {
 
   function start(c) {
     if (c === 'a') {
-      return stateA
+      return toFindB
     } else {
       return start
     }
@@ -21,45 +21,66 @@ function matchABABX(string) {
     return end
   }
 
-  function stateA(c) {
+  function toFindB(c) {
     if (c === 'b') {
-      return stateB
+      return toFindA2
     } else {
       return start(c)
     }
   }
 
-  function stateB(c) {
+  function toFindA2(c) {
     if (c === 'a'){
-      return stateA2
+      return toFindB2
     } else {
       return start(c)
     }
   }
 
-  function stateA2(c) {
-    if (c === 'a') {
-      return stateB2(c)
-    } else {
+  function toFindB2(c) {
+    if (c === 'b') {
+      return toFindX
+    } {
       return start(c)
     }
 
   }
 
-  function stateB2(c) {
+  function toFindX(c) {
     if (c === 'x') {
       return end
     } else {
-      return stateB(c)
+      return toFindA2(c)
     }
   }
 }
 
-matchABABX('abxababx')
+// console.log(matchABABX('abxababx'))
 /*
 状态机挑战版
 function match(pattern,text)
  */
+
+function match(pattern, string) {
+  let status = start
+  let arr = pattern.split('')
+  for (let c of string) {
+    status = status(c)
+  }
+  return status === end
+
+  function end(input) {
+    return end
+  }
+
+  function start(input) {
+    if (input === pattern[0]) {
+      return ''
+    } else {
+      return start
+    }
+  }
+}
 
 module.exports = {
   matchABABX
