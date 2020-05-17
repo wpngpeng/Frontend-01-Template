@@ -39,6 +39,22 @@ function matchABABX(string) {
 
   function toFindB2(c) {
     if (c === 'b') {
+      return toFindA3
+    } {
+      return start(c)
+    }
+
+  }
+  function toFindA3(c) {
+    if (c === 'a'){
+      return toFindB3
+    } else {
+      return start(c)
+    }
+  }
+
+  function toFindB3(c) {
+    if (c === 'b') {
       return toFindX
     } {
       return start(c)
@@ -50,7 +66,7 @@ function matchABABX(string) {
     if (c === 'x') {
       return end
     } else {
-      return toFindA2(c)
+      return toFindA3(c)
     }
   }
 }
