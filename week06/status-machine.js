@@ -2,7 +2,7 @@
 状态机简单版
 function match('ababx',text)
  */
-function matchABABX(string) {
+function matchABABABX(string) {
   let state = start
   for (let c of string) {
     state = state(c)
@@ -78,26 +78,26 @@ function match(pattern,text)
  */
 
 function match(pattern, string) {
-  let status = start
-  let arr = pattern.split('')
-  for (let c of string) {
-    status = status(c)
-  }
-  return status === end
-
-  function end(input) {
-    return end
-  }
-
-  function start(input) {
-    if (input === pattern[0]) {
-      return ''
-    } else {
-      return start
-    }
-  }
+  // let status = start
+  // let arr = pattern.split('')
+  // for (let c of string) {
+  //   status = status(c)
+  // }
+  // return status === end
+  //
+  // function end(input) {
+  //   return end
+  // }
+  //
+  // function start(input) {
+  //   if (input === pattern[0]) {
+  //     return ''
+  //   } else {
+  //     return start
+  //   }
+  // }
 }
 
 module.exports = {
-  matchABABX
+  matchABABABX
 }

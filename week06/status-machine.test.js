@@ -1,6 +1,6 @@
-const {matchABABX} = require('./status-machine')
+const {matchABABABX} = require('./status-machine')
 
 test('match(ababx,text)', () => {
   const string = 'ababxababababhjjasbasakhafanaxvababababbbabababababaxbaaabababab'
-  expect(matchABABX(string)).toBe(/abababx/.test(string))
+  expect(matchABABABX(string)).toBe(/abababx/.test(string))
 })
