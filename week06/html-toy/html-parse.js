@@ -263,19 +263,33 @@ function tagOpen(c) {
 }
 
 function endTagOpen(c) {
-  throw new Error('test')
+  // throw new Error('test')
+  if (c.match(/^[a-zA-Z]$/)) {
+    currentToken = {
+      type: 'endTag',
+      tagName: ''
+    }
+    return tagName(c)
+  } else if (c === '>') {
+    throw new Error('This is a missing-end-tag-name parse error.')
+  } else if (c === EOF) {
+    throw new Error('This is an eof-before-tag-name parse error.')
+  } else {
+    throw new Error('This is an invalid-first-character-of-tag-name parse error.')
+  }
 }
 
 function tagName(c) {
   if (c === /^[\t\n\f ]$/) {
     throw new Error('beforeAttributeName')
   } else if (c === '/') {
-    throw new Error('selfClosingStartTag')
+    return selfClosingStartTag
   } else if (c === '>') {
-    emit({})
-    return data(c)
+    emit(currentToken)
+    return data
   } else if (c.match(/^[a-zA-Z]$/)) {
-
+    currentToken.tagName += c.toLowerCase()
+    return tagName
   } else if (c === EOF) {
     throw new Error('This is an eof-in-tag parse error.')
   } else {
@@ -283,10 +297,22 @@ function tagName(c) {
   }
 }
 
+function selfClosingStartTag(c) {
+  if (c === '>') {
+    currentToken.isSelfClosing = true
+    emit(currentToken)
+    return data
+  } else if (c === EOF) {
+    throw new Error('This is an eof-in-tag parse error. ')
+  } else {
+    throw new Error('This is an unexpected-solidus-in-tag parse error. ')
+  }
+}
+
 module.exports = function parserHTML(html) {
   let state = data
+  console.log(html)
   for (let c of html) {
-    console.log(state, c)
     state = state(c)
   }
   state = state(EOF)
