@@ -263,7 +263,6 @@ function tagOpen(c) {
 }
 
 function endTagOpen(c) {
-  // throw new Error('test')
   if (c.match(/^[a-zA-Z]$/)) {
     currentToken = {
       type: 'endTag',
