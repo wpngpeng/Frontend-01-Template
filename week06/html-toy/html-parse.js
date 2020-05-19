@@ -13,7 +13,7 @@ let currentToken
 let currentAttribute
 let stack = [{type: 'document', children: []}]
 function emit(token) {
-  // console.log(token)
+  let top = stack[stack.length - 1]
   if (token.type === 'startTag') {
     let element = {
       type: 'element',
@@ -29,7 +29,16 @@ function emit(token) {
         })
       }
     }
-    console.log(element)
+    top.children.push(element)
+    if (!token.isSelfClosing) {
+      stack.push(element)
+    }
+  } else if (token.type === 'endTag') {
+    if (top.tagName !== token.tagName) {
+      throw new Error('Tag start end doesnt match!')
+    } else {
+      stack.pop()
+    }
   }
 }
 
@@ -244,7 +253,6 @@ module.exports = function parserHTML(html) {
     state = state(c)
   }
   state = state(EOF)
-  console.log(JSON.stringify(stack[0], ' ', 2))
-  return {}
+  return stack[0]
 }
 
