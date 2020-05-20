@@ -27,14 +27,38 @@ function match(element, selector) {
   }
   if (selector.charAt(0) === '#') {
     let attr = element.attributes.find(v => v.name === 'id')
-    return attr && '#' + attr === selector
+    return attr && '#' + attr.value === selector
   } else if (selector.charAt(0) === '.') {
-    let attr = element.attributes.find(v => v.name === 'id')
-    return attr && '.' + attr === selector
+    let attr = element.attributes.find(v => v.name === 'class')
+    return attr && '.' + attr.value === selector
   } else if (selector === element.tagName) {
     return true
   }
   return false
+}
+
+function specificity(selector) {
+  let p = [0,0,0,0]
+  let selectorParts = selector.split(' ')
+  for (let part of selectorParts) {
+    if (part.charAt(0) === '#') {
+      p[1] += 1
+    } else if (part.charAt(0) === '.') {
+      p[2] += 1
+    } else {
+      p[3] += 1
+    }
+  }
+  return p
+}
+
+function compare(sp1, sp2) {
+  for (let i = 0; i < sp1.length; i ++) {
+    if (sp1[i] !== sp2[i]) {
+      return sp1[i] - sp2[i]
+    }
+  }
+  return sp1[3] - sp2[3]
 }
 
 function computeCSS(element) {
@@ -58,16 +82,25 @@ function computeCSS(element) {
       matched = true
     }
     if (matched) {
+      let sp = specificity(rule.selectors[0])
       let computedStyle = element.computedStyle
       for (let declaration of rule.declarations) {
         if (!computedStyle[declaration.property]) {
           computedStyle[declaration.property] = {}
         }
-        computedStyle[declaration.property].value = declaration.value
+        if (!computedStyle[declaration.property].specificity) {
+          computedStyle[declaration.property].value = declaration.value
+          computedStyle[declaration.property].specificity = sp
+        } else if (compare(computedStyle[declaration.property].specificity, sp) < 0) {
+          computedStyle[declaration.property].value = declaration.value
+          computedStyle[declaration.property].specificity = sp
+        }
       }
-      console.log(computedStyle)
+      element.computedStyle = computedStyle
+      // console.log(computedStyle)
     }
   }
+  return element
 }
 
 function emit(token) {
@@ -88,7 +121,7 @@ function emit(token) {
       }
     }
 
-    computeCSS(element)
+    element = computeCSS(element)
 
     top.children.push(element)
     if (!token.isSelfClosing) {
