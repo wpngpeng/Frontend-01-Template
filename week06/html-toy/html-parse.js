@@ -8,11 +8,68 @@
 * 7.文本节点
  * 目的是什么?了解浏览器工作原理.第一步就是把html字符流转换成dom树
 */
+const css = require('css')
 const EOF = Symbol('EOF') // END OF FILE
 let currentToken
 let currentAttribute
 let currentTextNode = null
 let stack = [{type: 'document', children: []}]
+
+let rules = []
+function addCSSRules(text) {
+  const ast = css.parse(text)
+  rules.push(...ast.stylesheet.rules)
+}
+
+function match(element, selector) {
+  if (!element || !selector) {
+    return false
+  }
+  if (selector.charAt(0) === '#') {
+    let attr = element.attributes.find(v => v.name === 'id')
+    return attr && '#' + attr === selector
+  } else if (selector.charAt(0) === '.') {
+    let attr = element.attributes.find(v => v.name === 'id')
+    return attr && '.' + attr === selector
+  } else if (selector === element.tagName) {
+    return true
+  }
+  return false
+}
+
+function computeCSS(element) {
+  let elements = stack.slice().reverse()
+  if (!element.computedStyle) {
+    element.computedStyle = {}
+  }
+  for (let rule of rules) {
+    let selectorParts = rule.selectors[0].split(' ').reverse()
+    if (!match(element, selectorParts[0])) {
+      continue
+    }
+    let matched = false
+    let j = 1
+    for (let i = 0; i < elements.length; i++) {
+      if (match(elements[i], selectorParts[j])) {
+        j++
+      }
+    }
+    if (j >= selectorParts.length) {
+      matched = true
+    }
+    if (matched) {
+      let computedStyle = element.computedStyle
+      for (let declaration of rule.declarations) {
+        if (!computedStyle[declaration.property]) {
+          computedStyle[declaration.property] = {}
+        }
+        computedStyle[declaration.property].value = declaration.value
+      }
+      console.log(computedStyle)
+    }
+  }
+}
+
 function emit(token) {
   let top = stack[stack.length - 1]
   if (token.type === 'startTag') {
@@ -30,6 +87,9 @@ function emit(token) {
         })
       }
     }
+
+    computeCSS(element)
+
     top.children.push(element)
     if (!token.isSelfClosing) {
       stack.push(element)
@@ -39,6 +99,10 @@ function emit(token) {
     if (top.tagName !== token.tagName) {
       throw new Error('Tag start end doesnt match!')
     } else {
+      // 遇到style标签时,执行添加css规则操作
+      if (top.tagName === 'style') {
+        addCSSRules(top.children[0].content)
+      }
       stack.pop()
     }
     currentTextNode = null
