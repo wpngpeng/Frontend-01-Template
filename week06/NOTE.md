@@ -59,5 +59,9 @@ state = state(input); //把状态机的返回值作为下一个状态
 ### 例子：finite-state-machine文件
 
 ## HTML的解析
-   ### 浏览器
+ ### 浏览器
+   ![avatar](https://github.com/wpngpeng/Frontend-01-Template/blob/master/week06/5.jpg)
+   
+ ### 第一步——拆分文件
+ 
    
