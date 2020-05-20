@@ -11,6 +11,7 @@
 const EOF = Symbol('EOF') // END OF FILE
 let currentToken
 let currentAttribute
+let currentTextNode = null
 let stack = [{type: 'document', children: []}]
 function emit(token) {
   let top = stack[stack.length - 1]
@@ -33,12 +34,23 @@ function emit(token) {
     if (!token.isSelfClosing) {
       stack.push(element)
     }
+    currentTextNode = null
   } else if (token.type === 'endTag') {
     if (top.tagName !== token.tagName) {
       throw new Error('Tag start end doesnt match!')
     } else {
       stack.pop()
     }
+    currentTextNode = null
+  } else if (token.type === 'text') {
+    if (currentTextNode == null) {
+      currentTextNode = {
+        type: 'text',
+        content: ''
+      }
+      top.children.push(currentTextNode)
+    }
+    currentTextNode.content += token.content
   }
 }
 
@@ -48,6 +60,10 @@ function data (c) {
   } else if (c === EOF) {
     return
   } else {
+    emit({
+      type: 'text',
+      content: c
+    })
     return data
   }
 }
@@ -249,7 +265,6 @@ function afterAttributeValueQuoted(c) {
 module.exports = function parserHTML(html) {
   let state = data
   for (let c of html) {
-    // console.log(c)
     state = state(c)
   }
   state = state(EOF)
