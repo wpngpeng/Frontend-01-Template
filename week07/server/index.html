@@ -1,21 +1,68 @@
 <html>
 <head>
   <style>
-    body div #myid {
-      width: 100px;
-      background-color: #ff5000;
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #container {
+      height:200px;
+      width: 240px;
+      background-color: #8c8c8c;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
 
-    body div img {
-      width: 30px;
-      background-color: #ff1111;
+    div {
+      box-sizing: border-box;
+      border: 2px solid #8c8c8c;
+      width: 50px;
+      display: flex;
     }
+
+    #item1 {
+      background-color: #8cffa0;
+      height: 30px;
+    }
+
+    #item2 {
+      background-color: #a0c8ff;
+      height: 50px;
+    }
+
+    #item3 {
+      background-color: #ffa08c;
+      height: 40px;
+    }
+
+    #item4 {
+      background-color: #ffff8c;
+      height: 60px;
+    }
+
+    #item5 {
+      background-color: #ff8cff;
+      height: 70px;
+    }
+
+    #item6 {
+      background-color: #8cffff;
+      height: 50px;
+      font-size: 30px;
+    }
+
   </style>
 </head>
 <body>
-<div>
-  <img id="myid" class="asda"/>
-  <p>hello world</p>
-</div>
+<section id="container">
+  <div id="item1">1</div>
+  <div id="item2">2</div>
+  <div id="item3">3</div>
+  <div id="item4">4</div>
+  <div id="item5">5</div>
+  <div id="item6">6</div>
+</section>
 </body>
 </html>

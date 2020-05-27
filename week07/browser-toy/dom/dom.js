@@ -18,6 +18,9 @@ const {computeCSS, addCSSRules} = require('../cssom/cssom')
 const {layout} = require('../layout/layout')
 
 function emit(token) {
+  // if (token.type !== 'text') {
+  //   console.log(token)
+  // }
   let top = stack[stack.length - 1]
   if (token.type === 'startTag') {
     let element = {

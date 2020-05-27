@@ -1,0 +1,120 @@
+{
+  "type": "document",
+  "children": [
+    {
+      "type": "element",
+      "tagName": "html",
+      "children": [
+        {
+          "type": "text",
+          "content": "\n"
+        },
+        {
+          "type": "element",
+          "tagName": "head",
+          "children": [
+            {
+              "type": "text",
+              "content": "\n  "
+            },
+            {
+              "type": "element",
+              "tagName": "style",
+              "children": [
+                {
+                  "type": "text",
+                  "content": "\n    body div #myid {\n      width: 100px;\n      background-color: #ff5000;\n    }\n\n    body div img {\n      width: 30px;\n      background-color: #ff1111;\n    }\n  "
+                }
+              ],
+              "attributes": [],
+              "computedStyle": {}
+            },
+            {
+              "type": "text",
+              "content": "\n"
+            }
+          ],
+          "attributes": [],
+          "computedStyle": {}
+        },
+        {
+          "type": "text",
+          "content": "\n"
+        },
+        {
+          "type": "element",
+          "tagName": "body",
+          "children": [
+            {
+              "type": "text",
+              "content": "\n"
+            },
+            {
+              "type": "element",
+              "tagName": "div",
+              "children": [
+                {
+                  "type": "text",
+                  "content": "\n  "
+                },
+                {
+                  "type": "element",
+                  "tagName": "img",
+                  "children": [],
+                  "attributes": [
+                    {
+                      "name": "id",
+                      "value": "myid"
+                    },
+                    {
+                      "name": "class",
+                      "value": "asda"
+                    }
+                  ],
+                  "computedStyle": {
+                    "width": {
+                      "value": "100px",
+                      "specificity": [
+                        0,
+                        1,
+                        0,
+                        2
+                      ]
+                    },
+                    "background-color": {
+                      "value": "#ff5000",
+                      "specificity": [
+                        0,
+                        1,
+                        0,
+                        2
+                      ]
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "content": "\n"
+                }
+              ],
+              "attributes": [],
+              "computedStyle": {}
+            },
+            {
+              "type": "text",
+              "content": "\n"
+            }
+          ],
+          "attributes": [],
+          "computedStyle": {}
+        },
+        {
+          "type": "text",
+          "content": "\n"
+        }
+      ],
+      "attributes": [],
+      "computedStyle": {}
+    }
+  ]
+}
