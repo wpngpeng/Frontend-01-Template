@@ -225,8 +225,8 @@ exports.layout = function (element) {
           currentMain = itemStyle[mainEnd]
         }
       } else {
-        let step = 0
-        let currentMain = mainBase
+        let step = 0 // 元素之间的间距
+        let currentMain = mainBase // 起始位置
         if (style.justifyContent === 'flex-start') {
           currentMain = mainBase
         }

@@ -64,3 +64,35 @@ void async function () {
 //   await sleep()
 //   new XMLHttpRequest()
 // }()
+
+// 查看作业链接
+void function () {
+  const targetNode = document.querySelector('.js-quote-selection-container')
+  const options = {childList: true, subtree: true}
+  function callback(mutationsList, observer) {
+    console.log(mutationsList)
+    if (mutationsList.length > 1) {
+      click()
+    }
+  }
+  function click() {
+    try {
+      document.querySelectorAll('.Box.d-inline-flex.flex-column')[0].children[1].click()
+    } catch (e) {
+      getInfo()
+    }
+  }
+  function getInfo() {
+    const list = document.querySelectorAll('.d-block.comment-body.markdown-body.js-comment-body')
+    for (let p of list) {
+      const text = p.children[0].innerHTML
+      if (/北广深不相信眼泪/.test(text)) {
+        console.log(text)
+      }
+    }
+    observer.disconnect();
+  }
+  const observer = new MutationObserver(callback);
+  observer.observe(targetNode, options);
+  click()
+}()
