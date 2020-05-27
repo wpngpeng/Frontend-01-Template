@@ -96,3 +96,30 @@ void function () {
   observer.observe(targetNode, options);
   click()
 }()
+
+void function () {
+  function debounce(fn, delay) {
+    let timer = null
+    return (args) => {
+      clearTimeout(timer)
+      timer = setTimeout(() => {
+        fn.apply(this, args)
+        // fn(args)
+      }, delay)
+    }
+  }
+  class Vue{
+    constructor() {
+      this.button = debounce.bind(this)
+      this.name = 'hello vue'
+    }
+    fn () {
+      console.log(this.name)
+    }
+    click() {
+      this.button(this.fn, 1000)()
+    }
+  }
+  const $vm = new Vue()
+  $vm.click()
+}()
