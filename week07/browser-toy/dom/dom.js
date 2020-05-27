@@ -15,6 +15,7 @@ let currentTextNode = null
 let stack = [{type: 'document', children: []}]
 
 const {computeCSS, addCSSRules} = require('../cssom/cssom')
+const {layout} = require('../layout/layout')
 
 function emit(token) {
   let top = stack[stack.length - 1]
@@ -49,6 +50,7 @@ function emit(token) {
       if (top.tagName === 'style') {
         addCSSRules(top.children[0].content)
       }
+      layout(top)
       stack.pop()
     }
     currentTextNode = null
