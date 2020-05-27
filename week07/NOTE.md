@@ -1,6 +1,7 @@
 # 第7周学习记录
-## [本周作业地址链接(toy-browser完结:](./browser-toy)
 ## [CSS脑图链接](https://www.processon.com/view/link/5eccafdd1e08530a9b1f1d3d)
+## [本周作业地址链接(toy-browser完结:](./browser-toy)
+![](https://jtr354.github.io/Frontend-01-Template/week07/browser-toy/viewport.jpg)
 ## [本周作业地址链接(两个小实验程序):](./)
 ```js
 // 获取css规范列表
