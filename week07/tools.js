@@ -42,3 +42,25 @@ void async function () {
     console.log(standard.name)
   }
 }()
+
+
+// void async function () {
+//   function sleep(timeout = 2000) {
+//     return new Promise((resolve) => {
+//       setTimeout(() => {
+//         resolve()
+//       }, timeout)
+//     })
+//   }
+//   const list = ['qq935287', 'nemo00052']
+//   // for (let name of list) {
+//   //   input.value = name
+//   //   button.click()
+//   //   await sleep()
+//   // }
+//   document.querySelector('.frm_input').value = 'nemo00052'
+//   document.querySelector('.frm_input_append').click()
+//   console.log(document.querySelector('.frm_input').value)
+//   await sleep()
+//   new XMLHttpRequest()
+// }()
