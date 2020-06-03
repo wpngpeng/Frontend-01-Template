@@ -31,17 +31,101 @@
 <!--<div id="a">-->
 <!--  div-->
 <!--</div>-->
+<!--<style>-->
+<!--  .a:empty {-->
+<!--    color: green;-->
+<!--    width: 200px;-->
+<!--    height: 200px;-->
+<!--    background: #8c8c8c;-->
+<!--  }-->
+<!--  .a {-->
+<!--    color: red;-->
+<!--  }-->
+<!--</style>-->
+<!--<button class="a" src="123" href="http://www.baidu.com">123</button>-->
+<!--vertical-align-->
+<!--<section style="font-size: 50px;line-height: 100px;background: pink;">-->
+<!--  <div style="vertical-align: text-top;overflow: visible;display: inline-block;width: 1px;height: 1px;z-index: 22">-->
+<!--    <div style="width: 1000px;height: 1px;background: red"></div>-->
+<!--  </div>-->
+<!--  Hello 中-->
+<!--  <span>hello hello hello hello hello hello hello hello hello hello hello </span>-->
+<!--  <div style=";min-width: 100px;height: 50px;line-height: 70px;background: aqua;display: inline-block;vertical-align: baseline;">word word word</div>-->
+<!--  <div style=";min-width: 100px;height: 150px;line-height: 70px;background: #13ad2c;display: inline-block;vertical-align: baseline">2</div>-->
+<!--  <div style=";min-width: 100px;height: 550px;line-height: 550px;font-size: 550px; background: #1047b6;display: inline-block;vertical-align: baseline">3</div>-->
+<!--float-->
 <style>
-  .a:empty {
-    color: green;
-    width: 200px;
-    height: 200px;
-    background: #8c8c8c;
+  * {
+    padding: 0;
+    margin: 0;
   }
-  .a {
-    color: red;
+  .hhh {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    float: right;
+    margin: 10px;
+    clear: right;
+  }
+  section {
+    padding: 10px;
+    height: 120px;
+    border: 1px solid #8c8c8c;
+    overflow: hidden;
+  }
+  section > img {
+    width: 100px;
+    height: 100px;
+    background: #ebebeb;
+    margin-right: 10px;
+    float: left;
+    vertical-align: middle;
+  }
+  section > div > p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  section > div > h1 {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
   }
 </style>
-<button class="a" src="123" href="http://www.baidu.com">123</button>
+<!--<section style="clear: right;">-->
+<!--  "float:"<div class="hhh"></div>-->
+<!--  文字 文字文字 文字文字 文字文字-->
+<!--  <p>123 文字 文字文字 文字文字 文字文字 安师大暨大受打击好大啊阿萨大大</p>-->
+<!--</section>-->
+<section>
+  <img src="" alt="">
+  <div>
+    <h1>啊实打实啊实打实啊实打实啊实打实啊实啊实打实啊实打实啊实打实啊实打实啊实</h1>
+    <p>售价¥200</p>
+    <p>销量9999999999999999999999999999</p>
+  </div>
+</section>
+<script>
+  void function () {
+    var a = 3
+    console.log(a)
+  }()
+
+  void function () {
+    function c() {
+      var a = 4
+      return function () {
+        return {
+          a
+        }
+      }
+    }
+    var objFn = c()
+    var obj = objFn()
+    console.log(obj.a)
+  }()
+</script>
 </body>
 </html>
+<!-- top middle bottom 符合直觉,在字体高度的上中下位置-->
