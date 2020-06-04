@@ -26,6 +26,9 @@ function combinator(selector) {
 
 function getAST(c) {
   console.log(c)
+  if(c === ' ') {
+
+  }
 }
 
 // match('div #id.class', document.getElementById('id'))

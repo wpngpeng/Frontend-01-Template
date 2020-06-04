@@ -1,1 +1,5 @@
-# 每周总结可以写在这里
+# 第9周学习记录
+
+- [webgl教程](https://webglfundamentals.org/)
+- [openGL教程](https://learnopengl-cn.github.io/)
+- [贝赛尔曲线](https://cubic-bezier.com/)
