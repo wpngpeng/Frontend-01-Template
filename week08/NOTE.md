@@ -9,3 +9,12 @@
 ### Selector
 选择器优先级四元组模型[line-style,id,[class|attribute|pseudo],element]
 ![](https://specifishity.com/specifishity.png)
+
+### layout排版
+- 正常流
+    + 字体排版
+    + float
+    + block formatting context
+        + margin合并
+- flex
+- gird

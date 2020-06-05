@@ -27,7 +27,6 @@ function combinator(selector) {
 function getAST(c) {
   console.log(c)
   if(c === ' ') {
-
   }
 }
 
