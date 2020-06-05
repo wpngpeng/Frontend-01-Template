@@ -54,77 +54,125 @@
 <!--  <div style=";min-width: 100px;height: 150px;line-height: 70px;background: #13ad2c;display: inline-block;vertical-align: baseline">2</div>-->
 <!--  <div style=";min-width: 100px;height: 550px;line-height: 550px;font-size: 550px; background: #1047b6;display: inline-block;vertical-align: baseline">3</div>-->
 <!--float-->
-<style>
-  * {
-    padding: 0;
-    margin: 0;
-  }
-  .hhh {
-    width: 100px;
-    height: 100px;
-    background: blue;
-    float: right;
-    margin: 10px;
-    clear: right;
-  }
-  section {
-    padding: 10px;
-    height: 120px;
-    border: 1px solid #8c8c8c;
-    overflow: hidden;
-  }
-  section > img {
-    width: 100px;
-    height: 100px;
-    background: #ebebeb;
-    margin-right: 10px;
-    float: left;
-    vertical-align: middle;
-  }
-  section > div > p{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  section > div > h1 {
-    overflow: hidden;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-  }
-</style>
+<!--<style>-->
+<!--  * {-->
+<!--    padding: 0;-->
+<!--    margin: 0;-->
+<!--  }-->
+<!--  .hhh {-->
+<!--    width: 100px;-->
+<!--    height: 100px;-->
+<!--    background: blue;-->
+<!--    float: right;-->
+<!--    margin: 10px;-->
+<!--    clear: right;-->
+<!--  }-->
+<!--  section {-->
+<!--    padding: 10px;-->
+<!--    height: 120px;-->
+<!--    border: 1px solid #8c8c8c;-->
+<!--    overflow: hidden;-->
+<!--  }-->
+<!--  section > img {-->
+<!--    width: 100px;-->
+<!--    height: 100px;-->
+<!--    background: #ebebeb;-->
+<!--    margin-right: 10px;-->
+<!--    float: left;-->
+<!--    vertical-align: middle;-->
+<!--  }-->
+<!--  section > div > p{-->
+<!--    white-space: nowrap;-->
+<!--    overflow: hidden;-->
+<!--    text-overflow: ellipsis;-->
+<!--  }-->
+<!--  section > div > h1 {-->
+<!--    overflow: hidden;-->
+<!--    -webkit-line-clamp: 2;-->
+<!--    -webkit-box-orient: vertical;-->
+<!--    display: -webkit-box;-->
+<!--  }-->
+<!--</style>-->
 <!--<section style="clear: right;">-->
 <!--  "float:"<div class="hhh"></div>-->
 <!--  文字 文字文字 文字文字 文字文字-->
 <!--  <p>123 文字 文字文字 文字文字 文字文字 安师大暨大受打击好大啊阿萨大大</p>-->
 <!--</section>-->
-<section>
-  <img src="" alt="">
-  <div>
-    <h1>啊实打实啊实打实啊实打实啊实打实啊实啊实打实啊实打实啊实打实啊实打实啊实</h1>
-    <p>售价¥200</p>
-    <p>销量9999999999999999999999999999</p>
-  </div>
-</section>
-<script>
-  void function () {
-    var a = 3
-    console.log(a)
-  }()
+<!--<section>-->
+<!--  <img src="" alt="">-->
+<!--  <div>-->
+<!--    <h1>啊实打实啊实打实啊实打实啊实打实啊实啊实打实啊实打实啊实打实啊实打实啊实</h1>-->
+<!--    <p>售价¥200</p>-->
+<!--    <p>销量9999999999999999999999999999</p>-->
+<!--  </div>-->
+<!--</section>-->
+<!--<script>-->
+<!--  void function () {-->
+<!--    var a = 3-->
+<!--    console.log(a)-->
+<!--  }()-->
 
-  void function () {
-    function c() {
-      var a = 4
-      return function () {
-        return {
-          a
-        }
-      }
-    }
-    var objFn = c()
-    var obj = objFn()
-    console.log(obj.a)
-  }()
+<!--  void function () {-->
+<!--    function c() {-->
+<!--      var a = 4-->
+<!--      return function () {-->
+<!--        return {-->
+<!--          a-->
+<!--        }-->
+<!--      }-->
+<!--    }-->
+<!--    var objFn = c()-->
+<!--    var obj = objFn()-->
+<!--    console.log(obj.a)-->
+<!--  }()-->
+<!--</script>-->
+<div class="awesome">
+  <ul>
+    <li>1</li>
+    <li num="2">2</li>
+    <li class="list-item" num>3</li>
+    <li>4</li>
+    <li>5<a href="https://www.google.com" id="google">Google</a></li>
+  </ul>
+  <input type="te:xt" disabled>
+  <input type="checkbox" checked>
+</div>
+<script type="module">
+  import querySimpleSelector from './tools.js'
+  test('*')
+  test('li')
+  test('#google')
+  test('.awesome')
+  test('[num]')
+  test('[num=""]')
+  test('[type="te:xt"]')
+  test(':first-child')
+  test(':last-child')
+  test(':checked')
+  test(':disabled')
+  test(':root')
+  test(':not(:first-child)')
+  test(':empty')
+  test(':nth-child(4n - 1)')
+  test(':nth-last-child(4n - 1)')
+  test(':only-of-type')
+  test(':nth-last-of-type(4n - 1)')
+  test(':only-child')
+  test('li[num=2]:nth-child(3)')
+  test('li[num].list-item:nth-child(-5n+ 13)')
+  test('li.list-item:nth-child(-5n+ 13)[num]')
+  test('li.list-item[num]:nth-child(-5n+ 13)')
+  test('li[num].list-item:nth-of-type(-5n+ 13)')
+  test('li.list-item:nth-of-type(-5n+ 13)[num]')
+  test('li.list-item[num]:nth-of-type(-5n+ 13)')
+  function test (selectorStr) {
+    console.log(
+      '%cFOUND%c' + selectorStr + '\n',
+      'background: green; color: white; padding: 0 0.5em; font-size: 14px;',
+      'background: #999; color: white; padding: 0 0.5em; font-size: 14px;',
+      querySimpleSelector(document.documentElement, selectorStr)
+    )
+  }
 </script>
 </body>
 </html>
