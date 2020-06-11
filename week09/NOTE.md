@@ -131,11 +131,12 @@ else
 - 捕获
 - 冒泡
 
-### Browser API
+## Browser API
 - DOM
   + DOM Tree
   + Events
   + Range
+  + Traversal (废弃)
 - CSSOM
 - BOM
 - Web Animation
