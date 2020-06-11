@@ -81,12 +81,12 @@ else
 ```
 
 #### 字符引用
-- &#161; \&#161;
-- &amp; \&amp;
-- &lt; \&lt;
-- &gt; \&gt;
-- &quot; \&quot;
-- &apos; \&apos;
+- \&#161; 【&#161;】
+- \&amp; 【&amp;】
+- \&lt; 【&lt;】
+- \&gt; 【&gt;】
+- \&quot; 【&quot;】
+- \&apos; 【&apos;】
 
 ### DOM
 #### Node节点
