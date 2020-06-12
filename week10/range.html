@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p {
+       color: red; 
+    }
+    p::before {
+      content: 'Hello'
+    }
+  </style>
+  <link rel="stylesheet" title="x" href="data:text/css,p%7Bcolor:blue%7D">
+</head>
+<body>
+  <p>abc</p>
+  <div id="a">123<span>456789</span><span>01111111111</span></div>
+  <script>
+    let range = new Range()
+    range.setStart(a.childNodes[0],3)
+    range.setEnd(document.getElementById('a').childNodes[2], 3)
+    console.log(a.childNodes[2])
+  </script>
+</body>
+</html>
