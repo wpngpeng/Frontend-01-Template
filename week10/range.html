@@ -16,12 +16,56 @@
 </head>
 <body>
   <p>abc</p>
-  <div id="a">123<span>456789</span><span>01111111111</span></div>
+  <div id="a">123<span style="color: salmon;">456789</span><span>0123456789</span></div>
   <script>
     let range = new Range()
-    range.setStart(a.childNodes[0],3)
-    range.setEnd(document.getElementById('a').childNodes[2], 3)
-    console.log(a.childNodes[2])
+    range.setStart(a.childNodes[1].childNodes[0],1)
+    range.setEnd(a.childNodes[2].childNodes[0], 2);
+    // range.extractContents()
+    // range.setEnd(document.getElementById('a').childNodes[2].childNodes, 3)
+    // console.log(a.childNodes[2].childNodes)
+    // 获取 selection 对象
+    // const selection = window.getSelection();
+    
+    // 添加光标选择的范围
+    // selection.addRange(range);
+  </script>
+  <hr>
+  <section>
+    <span>1</span>
+    <p>2</p>
+    <p>3</p>
+    <div>4</div>
+  </section>
+  <script>
+    let element = document.querySelector('section')
+    function reverseChildren(element) {
+      let children = element.childNodes
+      let fragment = document.createDocumentFragment()
+      while(children.length) {
+        fragment.appendChild(element.lastChild)
+      }
+      element.appendChild(fragment)
+    }
+    function reverseChildren(element) {
+      let len = element.childNodes.length
+      while(len--) {
+        element.appendChild(element.childNodes[len])
+      }
+    }
+    function reverseChildren(element) {
+      let range = new Range()
+      range.selectNodeContents(element)
+      console.log(range)
+      let fragment = range.extractContents()
+      console.log(fragment)
+      let l = fragment.childNodes.length
+      while(l--) {
+        fragment.appendChild(fragment.childNodes[l])
+      }
+      element.appendChild(fragment)
+    }
+    reverseChildren(element)
   </script>
 </body>
 </html>
