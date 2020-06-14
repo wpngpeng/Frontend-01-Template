@@ -64,8 +64,9 @@
   + window.screen.width, window.screen.height 设备的屏幕尺寸。
   + window.screen.availWidth, window.screen.availHeight 设备屏幕的可渲染区域尺寸，一些 Android 机器会把屏幕的一部分预留做固定按钮，所以有这两个属性，实际上一般浏览器不会实现的这么细致。
   + window.screen.colorDepth, window.screen.pixelDepth 这两个属性是固定值 24，应该是为了以后预留。
-  ### 元素布局信息
-  - getClientRect() `tips: inline-level会产生多个盒子`
-  - getBoundingClientRect()
+### 元素布局信息
+- getClientRect() `tips: inline-level会产生多个盒子`
+- getBoundingClientRect()
 
-  ## [TicTacToe编程能力练习](https://jtr354.github.io/Frontend-01-Template/week10/TicTacToe.html)
+
+## [TicTacToe编程能力练习](https://jtr354.github.io/Frontend-01-Template/week10/TicTacToe.html)
