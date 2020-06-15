@@ -27,8 +27,12 @@
   </style>
 </head>
 <body>
+  <button id="button">再来一局</button>
   <div id="board"></div>
   <script>
+    button.addEventListener('click', () => {
+      window.location.reload()
+    })
     let pattern = [
       [0,0,0],
       [0,1,0],
@@ -61,21 +65,6 @@
       }
       moveUser(x, y)
       moveComputer()
-      // if (pattern[y][x]) {
-      //   return
-      // }
-      // pattern[y][x] = color
-      // if (check(pattern, color)) {
-      //   let h1 = document.createElement('h1')
-      //   h1.innerHTML = (color === 2 ? '❌' : '⭕️') + ' is WIN!'
-      //   document.body.appendChild(h1)
-      //   gameover = true
-      // }
-      // color = 3 - color
-      // show()
-      // if (willWin(pattern, color)) {
-      //   console.log((color === 2 ? '❌' : '⭕️') + ' will WIN!')
-      // }
     }
     function checkWin() {
       if (check(pattern, color)) {
@@ -93,16 +82,12 @@
       checkWin()
       color = 3 - color
       show()
-      // if (willWin(pattern, color)) {
-      //   console.log((color === 2 ? '❌' : '⭕️') + ' will WIN!')
-      // }
     }
     function moveComputer() {
       let opp = bestChoice(pattern, color)
-      console.log(opp.point)
       if (opp.point) {
         let [x, y] = opp.point
-        pattern[x][y] = color
+        pattern[y][x] = color
         checkWin()
         color = 3 - color
         show()
