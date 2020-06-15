@@ -63,6 +63,9 @@
         alert('GAME OVER!')
         return
       }
+      if (pattern[y][x]) {
+        return
+      }
       moveUser(x, y)
       moveComputer()
     }
@@ -75,9 +78,6 @@
       }
     }
     function moveUser(x, y) {
-      if (pattern[y][x]) {
-        return
-      }
       pattern[y][x] = color
       checkWin()
       color = 3 - color
