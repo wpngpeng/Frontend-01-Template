@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cell{
+      display:inline-block;
+      width:6px;
+      height:6px;
+      background-color: gray;
+      border-bottom:solid 1px white;
+      border-right:solid 1px white;
+      vertical-align: middle;
+      user-select: none;
+    }
+    #container{
+      width:701px;
+      font-size: 0;
+    }
+  </style>
+</head>
+<body>
+  <section id="container"></section>
+  <button onclick="localStorage.map = JSON.stringify(map)">保存</button>
+  <button id="clear">清空</button>
+  <script>
+    let map = localStorage.map ? JSON.parse(localStorage.map) : new Array(100*100).fill(0)
+    function fillColor(bool, cell, y, x) {
+      if (bool) {
+        cell.style.backgroundColor = 'black'
+        map[y*100 + x] = 1
+      } else {
+        cell.style.backgroundColor = ''
+        map[y*100 + x] = 0
+      }
+    }
+    function show() {
+      const fragment = document.createDocumentFragment()
+      for(let y=0;y<100;y++) {
+        for (let x=0; x<100; x++) {
+          let cell = document.createElement("div");
+          cell.classList.add("cell");
+          fillColor(map[y*100 + x],cell,y,x)
+          cell.addEventListener('mouseover', () => {
+            if (mouse) {
+              fillColor(!clear,cell,y,x)
+            }
+          })
+          fragment.appendChild(cell)
+        }
+      }
+      document.getElementById('container').appendChild(fragment)
+      let mouse = false
+      let clear = false
+      document.addEventListener('mousedown', (e) => {
+        mouse = true
+        clear = (e.button === 2)
+      })
+      document.addEventListener('contextmenu', e => e.preventDefault())
+      document.addEventListener('mouseup', () => mouse = false)
+    }
+    function clear() {
+      localStorage.removeItem('map')
+      map = new Array(100*100).fill(0)
+      Array.prototype.forEach.call(document.getElementById('container').children, (item) => {
+        item.style.backgroundColor = ''
+      })
+    }
+    show()
+    document.getElementById('clear').addEventListener('click', clear)
+  </script>
+</body>
+</html>
