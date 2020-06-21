@@ -8,6 +8,16 @@
 
 ## [寻路问题](https://jtr354.github.io/Frontend-01-Template/week11/road.html)
 - 绘制画板
+- 广度优先搜索
+- 深度优先搜索
+- A* (A-Star) 
+- (启发式算法)
+
+## 正则表达式
+- match
+- replace
+- exec
+- lastIndex
 
 ## [EventTarget.addEventListener()](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)
 + [Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
