@@ -13,7 +13,7 @@
 - A* (A-Star) 
 - (启发式算法)
 
-## 正则表达式
+## [正则表达式](https://jtr354.github.io/Frontend-01-Template/week11/regExp.html)
 - match
 - replace
 - exec
