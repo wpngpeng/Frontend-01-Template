@@ -1,6 +1,9 @@
 # 第12周学习记录
 - 作业:
   + [使用LL算法构建AST](./ll.html)
+  + [Trie字典树](./Trie.html)
+  + [KMP](./KMP.html)
+  + [WildCard](./WildCard.html)
 
 ## 使用LL算法构建AST
 
