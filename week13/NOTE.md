@@ -2,9 +2,9 @@
 
 ### 对象与组件
  - 对象
- - Properties
- - Methods
- - Inherit
+  - Properties
+  - Methods
+  - Inherit
 - 组件
   - Properties
   - Methods
