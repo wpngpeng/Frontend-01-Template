@@ -1,10 +1,10 @@
 ## 组件化基础
 
 ### 对象与组件
-- 对象
-  - Properties
-  - Methods
-  - Inherit
+ - 对象
+ - Properties
+ - Methods
+ - Inherit
 - 组件
   - Properties
   - Methods
