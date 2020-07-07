@@ -31,16 +31,13 @@
 - Property 强调从属关系
 
 ### 如何设计组件状态
-- property
-  + JS set
-  + JS Change
-- attribute
-  + JS set
-  + JS Change
-- state
-  + User Input Change
-- config
-  + Js set
+
+| Markup set | JS set | JS Change | User Input Chage |  |
+|  ----  | ----  | ----  | ----  | ----  |
+| X | √ | √ | ？ | poperty |
+| √ | √ | √ | ？ | attribute |
+| X | X | X | √ | state |
+| X | √ | X | X | config |
 
 ### Lifecycle
  - created
