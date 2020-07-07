@@ -1,6 +1,6 @@
-# 组件化基础
+## 组件化基础
 
-## 对象与组件
+### 对象与组件
 - 对象
   - Properties
   - Methods
@@ -15,7 +15,7 @@
   - Lifecycle
   - Children
 
-## Component
+### Component
 - End User Input
   + State
   + Children
@@ -26,11 +26,11 @@
   + Property
   + Event
 
-## Attribute
+### Attribute
 - Attribute 强调描述性
 - Property 强调从属关系
 
-## 如何设计组件状态
+### 如何设计组件状态
 - property
   + JS set
   + JS Change
@@ -42,7 +42,7 @@
 - config
   + Js set
 
-## Lifecycle
+### Lifecycle
  - created
    + mount
       - mount
@@ -54,6 +54,6 @@
       - render/update
  - destroyed
 
- ## Children
+ ### Children
 - Content型
 - Template型
