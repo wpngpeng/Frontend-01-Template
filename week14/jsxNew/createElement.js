@@ -1,5 +1,4 @@
 export function createElement (Cls, attributes, ...children) {
-    // console.log(arguments);
     let o;
     
     if (typeof Cls === 'string') {
@@ -13,8 +12,6 @@ export function createElement (Cls, attributes, ...children) {
     for (let name in attributes) {
         o.setAttribute(name, attributes[name]);
     }
-
-    // console.log(children);
     let visit = (children) => {
         for (let child of children) {
             
@@ -47,23 +44,15 @@ export class Text {
 }
 
 export class Wrapper {
-    constructor (type) {  // config
-        // console.log('Parent::config', config);
+    constructor (type) {
         this.children = [];
         this.root = document.createElement(type);
     }
-
-    // set className (v) { // property
-    //     console.log('Parent::className', v);
-    // }
-
-    setAttribute (name, value) {    // attribute
-        // console.log('Parent::setAttribute', name, value);
+    setAttribute (name, value) {  
         this.root.setAttribute(name, value);
     }
 
-    appendChild (child) {   // children
-        // console.log('Parent::appendChild', child);
+    appendChild (child) { 
         this.children.push(child);
         // child.mountTo(this.root);    // 这里不要直接 moute
     }
