@@ -1,4 +1,7 @@
 
+### 1. 组件化 | One more thing：Vue 风格的 SFC , 完善 loader 部分代码
+### 2. 组件化 | 动画,完成 animation，并完善 component
+
 ### 1. write a loader
 
 1. webpack配置
