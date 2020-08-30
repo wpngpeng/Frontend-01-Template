@@ -8,22 +8,22 @@
 • [JavaScript](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week02)
 
 ### week05-week07-浏览器工作原理&API
-• [JavaScript](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week05)
+• [浏览器工作原理&API](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week05)
 
 ### week07-week09-CSS
-• [JavaScript](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week07)
+• [CSS](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week07)
 
 ### week09-week10-HTML
-• [JavaScript](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week09)
+• [HTML](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week09)
 
 ### week10-week13-编程与算法实践
-• [JavaScript](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week10)
+• [编程与算法实践](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week10)
 
 ### week14-week16-组件化
-• [JavaScript](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week14)
+• [组件化](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week14)
 
 ### week17-week18-工具链
-• [JavaScript](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week17)
+• [工具链](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week17)
 
 ### week19-week20-发布系统
-• [JavaScript](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week19)
+• [发布系统](https://github.com/wpngpeng/Frontend-01-Template/tree/master/week19)
